@@ -1,8 +1,10 @@
 * Uploading The terraPen uses gcode files to control machine and pen movement. 
 
+* We now have our very own plotter software! [text](https://github.com/theworkisthework/terraForge/releases/tag/v1.2.0) This makes a lot of the steps here redundent! 
+
 * You can use various tools to convert your work into gcode, for example there are gcode plugins for Inkscape, online gcode generators  such as Laserweb, or desktop applications like DrawingBotV3 that converts images for plotting and directly output gcode. 
 
-* Lightburn, which while designed for laser cutters, generates very well optimized gcode that works great with terraPen. 
+* Lightburn, which while designed for laser cutters, generates very well optimized gcode that works well with terraPen. 
 
 * There are also command line tools like vpype that can output gcode. You can even output code directly from your own generative art if you wish. 
 
