@@ -13,8 +13,13 @@
 
 ## While it runs
 
-The **Job progress** panel (E) shows a progress bar with **Pause** and **Cancel**
-buttons.
+In [terraForge](terraForge.md), the job panel shows progress by G-code line, with
+**Pause** and **Abort**:
+
+![A job running in terraForge](img/terraforge-job-running.png)
+
+In the web interface, the **Job progress** panel (E) shows a progress bar with
+**Pause** and **Cancel** buttons.
 
 Pausing stops the carriage where it is. The pen lifts, so it will not bleed into the
 paper while you wait.

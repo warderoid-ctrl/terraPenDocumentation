@@ -3,12 +3,18 @@
 ## In terraForge
 
 The **jog panel** in [terraForge](terraForge.md) is the normal way to move the
-machine. It holds the controls you need most:
+machine.
 
-- Directional jogging in X and Y
-- **Pen up** and **pen down**
-- **Set Z zero**
-- **Home** — run the homing cycle
+![The terraForge jog panel](img/terraforge-jog-panel.png)
+
+It holds everything you need in one place:
+
+- **Step size** — 0.1, 1, 10 or 100 mm per click
+- **Direction arrows** for X and Y, with the house icon returning to origin
+- **Pen up** and **pen down** — the pencil icons
+- **Jog speed** in mm/min
+- **Run Homing** — runs the homing cycle
+- **Set Zero** — sets the current position as your job origin
 
 ## By hand
 

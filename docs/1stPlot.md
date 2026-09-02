@@ -22,7 +22,7 @@ find its own position.
 
 Clear the bed, then run the homing cycle. Any of these does it:
 
-- **Home** in [terraForge](terraForge.md)'s jog panel
+- **Run Homing** in [terraForge](terraForge.md)'s jog panel
 - **Home** in the web interface
 - `$H` in the console
 
@@ -34,8 +34,8 @@ The carriage moves until it finds its switches and sets its origin from them.
 
 !!! tip "You can still set your own zero"
     Homing establishes the machine's origin. If a job needs to start somewhere else,
-    home first, then set your own zero with the zero button in terraForge or the web
-    interface.
+    home first, then set your own zero — **Set Zero** in terraForge, or **ZeroXY** in
+    the web interface.
 
 ## 3. Fit the pen and set its height
 
@@ -44,7 +44,7 @@ page.
 
 1. Fit the pen into the holder.
 2. Lower it until the **nib touches the paper**.
-3. **Set Z zero** in terraForge.
+3. Press **Set Zero** in terraForge.
 4. Jog **+5 mm in Z** to set the pen-up height.
 
 That gives you a pen that draws at Z0 and lifts 5 mm clear.
