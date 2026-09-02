@@ -21,7 +21,7 @@ It holds everything you need in one place:
 **Only with the machine powered off.** Push the carriage gently, and never force it
 against the ends of its travel.
 
-## In the web interface
+## In the web UI
 
 The jog wheel in the **Controls** panel moves the carriage. Click a segment to move in
 that direction; the distance depends on which ring you click:

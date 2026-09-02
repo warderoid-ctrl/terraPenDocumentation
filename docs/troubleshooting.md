@@ -1,8 +1,9 @@
 # Troubleshooting
 
 !!! tip "Try this first"
-    Most problems clear with a power cycle. Switch the terraPen off at the wall, wait
-    a few seconds, and switch it back on — see [Restarting](restartTerraPen.md).
+    Most problems clear with a power cycle. Switch the terraPen off at the rear
+    right, wait a few seconds, and switch it back on — see
+    [Restarting](restartTerraPen.md). Home the machine afterwards.
 
 ## The machine will not move
 
@@ -13,8 +14,8 @@ trusting its position — most often after an aborted plot.
    console.
 2. [Home the machine](1stPlot.md#2-home-the-machine) again.
 
-If it still will not move, power the terraPen down at the wall, bring it back up, and
-home it.
+If it still will not move, switch the terraPen off at the rear right, bring it back
+up, and home it.
 
 !!! tip "Avoid this next time"
     Aborting a plot is what causes it. **Pause** instead — the machine stops safely

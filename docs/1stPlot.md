@@ -23,7 +23,7 @@ find its own position.
 Clear the bed, then run the homing cycle. Any of these does it:
 
 - **Run Homing** in [terraForge](terraForge.md)'s jog panel
-- **Home** in the web interface
+- **Home** in the web UI
 - `$H` in the console
 
 The carriage moves until it finds its switches and sets its origin from them.
@@ -35,7 +35,7 @@ The carriage moves until it finds its switches and sets its origin from them.
 !!! tip "You can still set your own zero"
     Homing establishes the machine's origin. If a job needs to start somewhere else,
     home first, then set your own zero — **Set Zero** in terraForge, or **ZeroXY** in
-    the web interface.
+    the web UI.
 
 ## 3. Fit the pen and set its height
 

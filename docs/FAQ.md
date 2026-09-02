@@ -10,10 +10,9 @@ For symptom-by-symptom help, see [Troubleshooting](troubleshooting.md).
 A little. The stepper toolhead ships unattached — four screws with the supplied hex
 key. See [Fitting the toolhead](assembly.md).
 
-## Is there an on/off switch?
+## Where is the power switch?
 
-No. The terraPen powers on as soon as it has power. Switch it off at the wall, or use
-a switched extension lead or smart plug.
+At the **rear right** of the plotter. Plug the adaptor in, then switch it on there.
 
 ## What software should I use?
 

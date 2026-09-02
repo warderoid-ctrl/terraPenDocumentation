@@ -92,7 +92,7 @@ nav:
       - What's in the box: WhatsInTheBox.md
       - Fitting the toolhead: assembly.md
       - First time setup: 1sttimeuse.md
-      - The web interface: terraPenWebUI.md
+      - The web UI: terraPenWebUI.md
   - Your first plot:
       - Your first plot: 1stPlot.md
       - Moving the pen carriage: movingThePenCarriage.md

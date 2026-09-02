@@ -1,23 +1,23 @@
-# The terraPen web interface
+# The terraPen web UI
 
-The terraPen serves its own web interface, so there is nothing to install. It is
+The terraPen serves its own web UI, so there is nothing to install. It is
 useful for setup, for quick checks, and when you are away from your own computer.
 
 !!! note "Plotting is done in terraForge"
     For everyday work — generating G-code, uploading and running jobs — use
-    [terraForge](terraForge.md). This page is a reference for the built-in interface.
+    [terraForge](terraForge.md). This page is a reference for the web UI.
 
-![The terraPen web interface, with each panel labelled](img/quick-start-guide-UX-markup.jpg)
+![The terraPen web UI, with each panel labelled](img/quick-start-guide-UX-markup.jpg)
 
 !!! note "Your screen may look different"
-    The interface reflows to fit the window, so panels move around on smaller screens.
+    The web UI reflows to fit the window, so panels move around on smaller screens.
     Find panels by their names rather than their position.
 
 ## The panels
 
 ### A — Tabs
 
-![Interface tabs](img/UI Tabs.png)
+![Web UI tabs](img/UI Tabs.png)
 
 Switch between the main dashboard and the firmware configuration settings.
 
@@ -90,7 +90,7 @@ alarms and for troubleshooting.
 
 ![Preferences menu](img/UI-hamburger-Prefs.png)
 
-Preferences for the machine and the interface, including the setup wizard used to
+Preferences for the machine and the web UI, including the setup wizard used to
 [join your own Wi-Fi network](connectToPersonalNetwork.md).
 
 Feedrate settings also live here:

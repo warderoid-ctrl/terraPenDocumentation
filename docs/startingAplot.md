@@ -41,11 +41,11 @@ The machine will be in alarm. To recover:
 
 !!! note "If clearing the alarm is not enough"
     Occasionally an abort leaves the machine unwilling to move even after the alarm is
-    cleared. Power the terraPen down at the wall, bring it back up, and home it. See
+    cleared. Switch it off at the rear right, bring it back up, and home it. See
     [Restarting the terraPen](restartTerraPen.md).
 
-## In the web interface
+## In the web UI
 
-The built-in [web interface](terraPenWebUI.md) can also start and stop plots, using
+The [web UI](terraPenWebUI.md) can also start and stop plots, using
 **Pause** and **Cancel** in the job progress panel. The same rule applies — pause
 before you cancel.

@@ -8,7 +8,7 @@ it.
 
 ## 1. Enter your network details
 
-Connect to the `terraPen` access point and open the interface, then set your network
+Connect to the `terraPen` access point and open the web UI, then set your network
 name and password in the controller settings.
 
 ![Setting the network SSID](img/Settings SSID.png)

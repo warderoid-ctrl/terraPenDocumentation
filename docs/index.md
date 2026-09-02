@@ -12,7 +12,7 @@ guide takes you from unboxing to your first finished drawing.
 ## The short version
 
 1. **Fit the toolhead.** It ships unattached — four screws and the supplied hex key.
-2. **Power on.** Plug it in; the machine starts automatically.
+2. **Power on.** Plug it in, then switch on at the rear right.
 3. **Connect.** Join the `terraPen` Wi-Fi network, then move the plotter onto your own network.
 4. **Install terraForge**, our desktop app for driving the machine.
 5. **Home the machine**, fit paper, and set your pen height.

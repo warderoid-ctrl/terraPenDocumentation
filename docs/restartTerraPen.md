@@ -2,16 +2,19 @@
 
 Power cycling fixes a surprising number of problems. There are two ways to do it.
 
-## At the wall
+## With the power switch
 
-It is safe to switch off or unplug the machine at any time — there is nothing to
-shut down first.
+Use the switch at the **rear right** of the plotter. Off, a couple of seconds, then
+on again.
 
-!!! tip "Make this easy on yourself"
-    Since the terraPen has no power switch, plug it into a switched extension lead or
-    a smart plug. You will do this more often than you expect.
+It is safe to power the machine down at any time — there is nothing to shut down
+first.
 
-## From the interface
+!!! note "Home again afterwards"
+    A power cycle clears the machine's idea of where it is, so
+    [home it](1stPlot.md#2-home-the-machine) before plotting again.
+
+## From the web UI
 
 1. Select the **ESP3D** tab (A).
 2. Click the red **power** icon to reset the controller.

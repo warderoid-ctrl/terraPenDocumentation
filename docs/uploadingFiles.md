@@ -29,7 +29,7 @@ Save files with a `.g` extension.
 If you have a G-code file from another tool, terraForge will upload it for you — drop
 it into the file browser and send it to the machine.
 
-### Through the web interface
+### Through the web UI
 
 1. Go to the **SD Files** panel (F).
 2. Click **Upload**.
