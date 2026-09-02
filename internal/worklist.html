@@ -204,8 +204,8 @@
     <p class="standfirst">Every question but one is answered and written into the guide, and the site is live at <a href="https://warderoid-ctrl.github.io/terraPenDocumentation/">warderoid-ctrl.github.io/terraPenDocumentation</a>. What remains is the photography and the video.</p>
     <div class="counts">
       <div class="count good"><b>12</b><span>Answered</span></div>
-      <div class="count open"><b>3</b><span>Still open</span></div>
-      <div class="count"><b>22</b><span>Images left</span></div>
+      <div class="count open"><b>4</b><span>Still open</span></div>
+      <div class="count"><b>23</b><span>Images left</span></div>
       <div class="count"><b>8</b><span>Videos</span></div>
       <div class="count"><b>4,900</b><span>Words now</span></div>
     </div>
@@ -227,6 +227,8 @@
       <div class="log-row"><div class="log-id">Q6</div><div class="log-body"><b>Pen height rewritten around the real method</b><span>Nib to paper, set Z zero, jog +5 mm — and the reason 5 mm exists (paper warping mid-plot). The puck is removed from the box list, and the guide now says to set zero fractionally <i>into</i> the paper so the spring tracks an uneven bed.</span></div></div>
       <div class="log-row"><div class="log-id">Q7</div><div class="log-body"><b>Wi-Fi setup gained a way to tell it worked</b><span>Your check is now the centrepiece of the page: if <code>terraPen</code> has vanished from the available networks, it joined yours; if it is still there, it fell back. Far better than telling people to dig through router settings.</span></div></div>
       <div class="log-row"><div class="log-id">R1</div><div class="log-body"><b>The web UI Home button does home</b><span>It homes <b>X and Y</b> — there is no switch on Z. The hedge sending readers to terraForge for "real" homing is gone, and the first-plot page now says explicitly that Z is not homed, which is precisely why you set it by hand against the paper in the next step.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>The terraPen has a power switch now</b><span>Rear right. Applied across six pages that previously said the opposite — the "no power switch" note, the smart-plug workaround, the FAQ answer, and every power-cycle instruction. Restarting is now a switch rather than a trip to the wall socket.</span></div></div>
+      <div class="log-row"><div class="log-id">TERMS</div><div class="log-body"><b>"The interface" is now "the web UI" throughout</b><span>Eighteen references normalised, including the nav label, so the built-in interface is never confused with terraForge.</span></div></div>
       <div class="log-row"><div class="log-id">R2</div><div class="log-body"><b>terraForge 1.4.0-rc7 confirmed</b><span>Already what the home page said; no change needed.</span></div></div>
       <div class="log-row"><div class="log-id">R3</div><div class="log-body"><b>USB page is terraForge only now</b><span>The Lightburn walkthrough is gone, and with it the unanswerable question of whether its movement bug was ever fixed — the page no longer makes a claim either way. Lightburn survives as a documented alternative, not a recommendation.</span></div></div>
       <div class="log-row"><div class="log-id">R5</div><div class="log-body"><b>Permanent Discord invite kept</b><span>Throughout the guide.</span></div></div>
@@ -260,6 +262,13 @@ should be        594                         420</div>
         <p class="ask"><b>I need:</b> which actually resolves. I have written <code>terrapen.local</code> with "or the address your router assigned" as a fallback, so the page is safe either way — but the two defaults disagreeing will confuse people.</p>
       </div>
 
+
+      <div class="q">
+        <div class="q-top"><span class="qid">R8</span><h3>Has the power socket moved too?</h3><span class="chip confirm">Confirm</span></div>
+        <p>The guide still says the socket is on the controller <b>underneath the base board</b>, reached by lifting the front — inherited from the original documentation. Now that there is a switch at the rear right, a revision that added it may well have moved the inlet to the back as well.</p>
+        <p class="ask"><b>I need:</b> confirmation, or the new location. Sending someone to tip up a machine that has a socket at the back is a small thing that makes a guide feel untrustworthy on page one.</p>
+      </div>
+
     </div>
   </section>
 
@@ -279,6 +288,7 @@ should be        594                         420</div>
           <tr><td class="tick"><input type="checkbox" data-id="n1"></td><td class="id">TP-01</td><td class="page">WhatsInTheBox</td><td class="shot"><b>Box contents flat-lay</b><span>Labelled, and showing the toolhead unattached so people know that is expected.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n2"></td><td class="id">TP-02</td><td class="page">assembly<span class="new">new page</span></td><td class="shot"><b>Fitting the stepper toolhead</b><span>Highest priority in the whole list. Where it mounts, the four screw positions, and the finished result. This is now the first thing an owner does and there is no image of it anywhere.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n3"></td><td class="id">TP-03</td><td class="page">1sttimeuse</td><td class="shot"><b>Power socket under the base board</b><span>Machine tipped up at the front. People cannot find this.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n3b"></td><td class="id">TP-03b</td><td class="page">1sttimeuse</td><td class="shot"><b>The power switch, rear right</b><span class="new">new</span><span>Wide enough to place it on the machine, then close enough to see it. Referenced from first setup, restarting and troubleshooting, so it earns a good shot.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n4"></td><td class="id">TP-04</td><td class="page">1sttimeuse</td><td class="shot"><b>Wi-Fi list showing "terraPen"</b><span>Confirms they are looking at the right network.</span></td><td>Screenshot</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n5"></td><td class="id">TP-05</td><td class="page">1sttimeuse</td><td class="shot"><b>The macOS captive portal</b><span>So people recognise the window they are being told to close.</span></td><td>Screenshot</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n6"></td><td class="id">TP-06</td><td class="page">1sttimeuse</td><td class="shot"><b>Interface on first load</b><span>Current full-window view.</span></td><td>Screenshot</td></tr>
