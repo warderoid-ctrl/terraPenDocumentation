@@ -1,4 +1,10 @@
-echo "site/" >> .gitignore
+site/
+public/
 **/public
 **/node_modules
 **/.cache
+
+# Local Python virtualenvs (not for commit)
+venv/
+.venv/
+pyvenv.cfg
