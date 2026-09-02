@@ -6,6 +6,18 @@ The repo uses GitHub actions to automatically build and publish the site when a 
 
 The live site is in the **gh-pages** branch, which is hosted using GitHub pages.  You should not modify content in the gh-pages branch directly, this branch should only be written to by the GitHub action configured on the repository (see the .github folder checked into the repository main branch).
 
+## Documentation worklist
+
+An internal worklist tracks what the guide still needs — outstanding questions about
+the machine, the photography and video shot lists, and known content gaps. It is not
+part of the user guide and is not linked from the site navigation.
+
+- Source: [docs/internal/worklist.html](docs/internal/worklist.html)
+- Published: <https://warderoid-ctrl.github.io/terraPenDocumentation/internal/worklist.html>
+
+Tick boxes on the published page are remembered in your own browser only; they are not
+shared or committed. To record progress for everyone, edit the file.
+
 ## Adding content
 
 The documentation is written using Markdown, which is then transformed into a static web site by a tool called [MkDocs](https://www.mkdocs.org).  The site is styled using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).  This extends basic Markdown to offer more advanced page layout and features.

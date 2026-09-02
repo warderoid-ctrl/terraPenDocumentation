@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>terraPen Docs Worklist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#F6F7F2;
+    --surface:#FFFFFF;
+    --ink:#191D14;
+    --ink-soft:#4A5142;
+    --slate:#6E7566;
+    --rule:#DDE1D4;
+    --rule-soft:#E9ECE2;
+    --accent:#4F7A1C;
+    --accent-soft:#EDF3E1;
+    --amber:#9C6614;
+    --amber-soft:#F7EEDC;
+    --shadow:0 1px 2px rgba(25,29,20,.06),0 8px 24px -16px rgba(25,29,20,.28);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#12150E;
+      --surface:#191D14;
+      --ink:#E7EADF;
+      --ink-soft:#AFB6A4;
+      --slate:#8D9682;
+      --rule:#2C3223;
+      --rule-soft:#232819;
+      --accent:#9DC64E;
+      --accent-soft:#1E2615;
+      --amber:#D6A44E;
+      --amber-soft:#292014;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#12150E;
+    --surface:#191D14;
+    --ink:#E7EADF;
+    --ink-soft:#AFB6A4;
+    --slate:#8D9682;
+    --rule:#2C3223;
+    --rule-soft:#232819;
+    --accent:#9DC64E;
+    --accent-soft:#1E2615;
+    --amber:#D6A44E;
+    --amber-soft:#292014;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.8);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:15px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 28px 96px;display:flex;flex-direction:column;gap:52px}
+
+  header{display:flex;flex-direction:column;gap:20px}
+  .eyebrow{
+    font-family:"Roboto Mono",ui-monospace,monospace;
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--slate);
+  }
+  h1{
+    font-family:Jura,"IBM Plex Sans",sans-serif;
+    font-weight:700;font-size:clamp(30px,5vw,44px);line-height:1.1;
+    letter-spacing:-.01em;margin:0;text-wrap:balance;
+  }
+  .standfirst{max-width:64ch;color:var(--ink-soft);font-size:16.5px;margin:0}
+  .counts{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+  .count{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:10px 14px;display:flex;flex-direction:column;gap:2px;min-width:112px;
+    box-shadow:var(--shadow);
+  }
+  .count b{
+    font-family:Jura,sans-serif;font-size:24px;font-weight:700;line-height:1;
+    font-variant-numeric:tabular-nums;
+  }
+  .count span{
+    font-family:"Roboto Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--slate);
+  }
+  .count.good b{color:var(--accent)}
+  .count.open b{color:var(--amber)}
+
+  section{display:flex;flex-direction:column;gap:20px}
+  .sec-head{display:flex;flex-direction:column;gap:6px;border-top:2px solid var(--ink);padding-top:14px}
+  h2{font-family:Jura,sans-serif;font-weight:700;font-size:23px;margin:0;letter-spacing:-.005em}
+  .sec-head p{margin:0;color:var(--ink-soft);max-width:68ch;font-size:14.5px}
+
+  .qs{display:flex;flex-direction:column;gap:14px}
+  .q{
+    background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--amber);
+    border-radius:3px;padding:16px 18px;display:flex;flex-direction:column;gap:9px;
+    box-shadow:var(--shadow);
+  }
+  .q-top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .qid{font-family:"Roboto Mono",monospace;font-size:11px;color:var(--slate);letter-spacing:.06em;flex:none}
+  .q-top h3{font-family:Jura,sans-serif;font-size:17px;font-weight:700;margin:0;flex:1;min-width:min(100%,260px)}
+  .q p{margin:0;color:var(--ink-soft);font-size:14.5px;max-width:72ch}
+  .evidence{
+    font-family:"Roboto Mono",monospace;font-size:12px;
+    background:var(--accent-soft);border-radius:2px;padding:9px 11px;
+    color:var(--ink-soft);overflow-x:auto;white-space:pre-wrap;word-break:break-word;
+  }
+  .ask{font-size:14.5px;color:var(--ink)}
+  .ask b{font-family:Jura,sans-serif;font-weight:700}
+  .chip{
+    font-family:"Roboto Mono",monospace;font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;padding:3px 8px;border-radius:2px;flex:none;
+    border:1px solid transparent;white-space:nowrap;
+  }
+  .chip.blocks{background:var(--amber-soft);color:var(--amber);border-color:var(--amber)}
+  .chip.confirm{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+
+  /* resolved log */
+  .log{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:3px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+  .log-row{display:grid;grid-template-columns:52px 1fr;gap:0;border-bottom:1px solid var(--rule-soft)}
+  .log-row:last-child{border-bottom:none}
+  .log-id{
+    font-family:"Roboto Mono",monospace;font-size:11px;color:var(--accent);
+    padding:13px 0 13px 14px;letter-spacing:.06em;
+  }
+  .log-body{padding:13px 16px 13px 0;display:flex;flex-direction:column;gap:3px}
+  .log-body b{font-family:Jura,sans-serif;font-size:15.5px;font-weight:700}
+  .log-body span{color:var(--ink-soft);font-size:14px;max-width:74ch}
+
+  .tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;min-width:680px;font-size:14px}
+  thead th{
+    text-align:left;font-family:"Roboto Mono",monospace;font-weight:500;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);
+    padding:11px 14px;border-bottom:1px solid var(--rule);white-space:nowrap;
+  }
+  tbody td{padding:11px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--accent-soft)}
+  td.id{font-family:"Roboto Mono",monospace;font-size:11.5px;color:var(--slate);white-space:nowrap}
+  td.page{font-family:"Roboto Mono",monospace;font-size:12px;white-space:nowrap}
+  td.shot b{font-family:Jura,sans-serif;font-weight:700;font-size:15px}
+  td.shot span{display:block;color:var(--ink-soft);font-size:13.5px;margin-top:2px;max-width:56ch}
+  td.tick{width:34px}
+  .new{
+    font-family:"Roboto Mono",monospace;font-size:9.5px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);
+    border-radius:2px;padding:1px 5px;margin-left:7px;vertical-align:2px;white-space:nowrap;
+  }
+  input[type=checkbox]{
+    appearance:none;width:15px;height:15px;border:1.5px solid var(--slate);
+    border-radius:2px;cursor:pointer;position:relative;margin:3px 0 0;background:transparent;
+  }
+  input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
+  input[type=checkbox]:checked::after{
+    content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;
+    border:solid var(--surface);border-width:0 2px 2px 0;transform:rotate(42deg);
+  }
+  input[type=checkbox]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  /* badges sit inline; td.shot span is display:block and would otherwise win */
+  td.shot .new{display:inline-block;margin-top:0;width:auto;font-size:9.5px;color:var(--accent)}
+  tr.done td.shot b,tr.done td.shot span{opacity:.45;text-decoration:line-through}
+  tr.done td.shot .new{opacity:1;text-decoration:none}
+
+  .gaps{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px}
+  .gap{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:15px 17px;display:flex;flex-direction:column;gap:7px;box-shadow:var(--shadow);
+  }
+  .gap h3{font-family:Jura,sans-serif;font-size:16px;font-weight:700;margin:0}
+  .gap p{margin:0;font-size:14px;color:var(--ink-soft)}
+
+  .note{
+    border:1px dashed var(--rule);border-radius:3px;padding:14px 17px;
+    font-size:14px;color:var(--ink-soft);background:var(--surface);
+  }
+  .note b{font-family:Jura,sans-serif;color:var(--ink)}
+  code{font-family:"Roboto Mono",monospace;font-size:.9em;background:var(--accent-soft);padding:1px 5px;border-radius:2px}
+  footer{border-top:1px solid var(--rule);padding-top:18px;color:var(--slate);font-size:13px}
+  a{color:var(--accent)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<style>
+  /* standalone reset - the artifact host supplied this, a plain page does not */
+  html{color-scheme:light dark}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">terraPen documentation · worklist · site live · updated 2 September 2026</div>
+    <h1>What the docs still need</h1>
+    <p class="standfirst">Every question but one is answered and written into the guide, and the site is live at <a href="https://warderoid-ctrl.github.io/terraPenDocumentation/">warderoid-ctrl.github.io/terraPenDocumentation</a>. What remains is the photography and the video.</p>
+    <div class="counts">
+      <div class="count good"><b>12</b><span>Answered</span></div>
+      <div class="count open"><b>3</b><span>Still open</span></div>
+      <div class="count"><b>22</b><span>Images left</span></div>
+      <div class="count"><b>8</b><span>Videos</span></div>
+      <div class="count"><b>4,900</b><span>Words now</span></div>
+    </div>
+  </header>
+
+  <!-- ================= RESOLVED ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Answered, and what changed</h2>
+      <p>All eight questions are written into the guide on branch <code>docs/first-time-user-rewrite</code>.</p>
+    </div>
+
+    <div class="log">
+      <div class="log-row"><div class="log-id">Q1</div><div class="log-body"><b>Homing is now the first step of every session</b><span>The machine ships with limit switches, so homing leads, and setting your own zero is documented as the follow-on rather than the primary method. The old jog-to-the-corner routine is gone.</span></div></div>
+      <div class="log-row"><div class="log-id">Q2</div><div class="log-body"><b>Working area is A2 — 594 × 420 mm</b><span>Corrected throughout. The YAML page now states explicitly that <code>max_travel_mm</code> does not define the usable area, since soft limits are off — otherwise the next reader hits the same 300 mm confusion.</span></div></div>
+      <div class="log-row"><div class="log-id">Q3</div><div class="log-body"><b>terraForge leads the guide</b><span>Now the recommended route, pointing at the latest RC rather than a pinned tag, with a note that RC is the build to take while development is active.</span></div></div>
+      <div class="log-row"><div class="log-id">Q4</div><div class="log-body"><b>The USB warning is gone</b><span>Replaced with the real procedure: select USB in terraForge's machine settings; jogging, homing, pen control and file upload all work over the cable.</span></div></div>
+      <div class="log-row"><div class="log-id">Q5</div><div class="log-body"><b>New page: Fitting the toolhead</b><span>The stepper ships unattached — four screws and the supplied hex key. The guide previously had no assembly step at all, which would have stopped a new owner on day one.</span></div></div>
+      <div class="log-row"><div class="log-id">Q6</div><div class="log-body"><b>Pen height rewritten around the real method</b><span>Nib to paper, set Z zero, jog +5 mm — and the reason 5 mm exists (paper warping mid-plot). The puck is removed from the box list, and the guide now says to set zero fractionally <i>into</i> the paper so the spring tracks an uneven bed.</span></div></div>
+      <div class="log-row"><div class="log-id">Q7</div><div class="log-body"><b>Wi-Fi setup gained a way to tell it worked</b><span>Your check is now the centrepiece of the page: if <code>terraPen</code> has vanished from the available networks, it joined yours; if it is still there, it fell back. Far better than telling people to dig through router settings.</span></div></div>
+      <div class="log-row"><div class="log-id">R1</div><div class="log-body"><b>The web UI Home button does home</b><span>It homes <b>X and Y</b> — there is no switch on Z. The hedge sending readers to terraForge for "real" homing is gone, and the first-plot page now says explicitly that Z is not homed, which is precisely why you set it by hand against the paper in the next step.</span></div></div>
+      <div class="log-row"><div class="log-id">R2</div><div class="log-body"><b>terraForge 1.4.0-rc7 confirmed</b><span>Already what the home page said; no change needed.</span></div></div>
+      <div class="log-row"><div class="log-id">R3</div><div class="log-body"><b>USB page is terraForge only now</b><span>The Lightburn walkthrough is gone, and with it the unanswerable question of whether its movement bug was ever fixed — the page no longer makes a claim either way. Lightburn survives as a documented alternative, not a recommendation.</span></div></div>
+      <div class="log-row"><div class="log-id">R5</div><div class="log-body"><b>Permanent Discord invite kept</b><span>Throughout the guide.</span></div></div>
+      <div class="log-row"><div class="log-id">Q8</div><div class="log-body"><b>Versions recorded on the home page</b><span>FluidNC 4.02 and terraForge 1.4.0-rc7, so future readers can tell how current a page is.</span></div></div>
+    </div>
+  </section>
+
+  <!-- ================= OPEN ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Still open</h2>
+      <p>One cosmetic, and two that surfaced from reading the terraForge screenshots closely.</p>
+    </div>
+    <div class="qs">
+      <div class="q">
+        <div class="q-top"><span class="qid">R4</span><h3>Which web UI version?</h3><span class="chip confirm">Low priority</span></div>
+        <p>The home page records FluidNC 4.02 and terraForge 1.4.0-rc7, and leaves the web interface out. Worth filling in whenever you find it — it is the marker that tells a future reader how stale a page has become.</p>
+      </div>
+
+      <div class="q">
+        <div class="q-top"><span class="qid">R6</span><h3>terraForge's default machine profile is not an A2 terraPen</h3><span class="chip blocks">Would spoil a plot</span></div>
+        <p>The shipped <code>TerraPen (Default)</code> profile is set to a <b>220 × 200 mm</b> bed. On a 594 × 420 machine, artwork positioned against that profile lands in the wrong place, and nothing warns the user.</p>
+        <div class="evidence">Bed width (mm)   220        Bed height (mm)  200
+should be        594                         420</div>
+        <p class="ask"><b>I have</b> put a warning on the terraForge page telling people to set it themselves. <b>But</b> this looks like it should be fixed in terraForge instead — worth raising with Mark.</p>
+      </div>
+
+      <div class="q">
+        <div class="q-top"><span class="qid">R7</span><h3>Is the host <code>terrapen.local</code> or <code>fluidnc.local</code>?</h3><span class="chip confirm">Confirm</span></div>
+        <p>This guide says <code>terrapen.local</code> throughout, which you confirmed. terraForge's default profile ships with <code>fluidnc.local</code> in the Host field.</p>
+        <p class="ask"><b>I need:</b> which actually resolves. I have written <code>terrapen.local</code> with "or the address your router assigned" as a fallback, so the page is safe either way — but the two defaults disagreeing will confuse people.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SHOT LIST ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Image shot list</h2>
+      <p>Revised for your answers — the puck shot is gone, and toolhead fitting, homing switches and the terraForge jog panel are new. Ticks are remembered in this browser.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th></th><th>ID</th><th>Page</th><th>Shot</th><th>Type</th></tr>
+        </thead>
+        <tbody id="shots">
+          <tr><td class="tick"><input type="checkbox" data-id="n1"></td><td class="id">TP-01</td><td class="page">WhatsInTheBox</td><td class="shot"><b>Box contents flat-lay</b><span>Labelled, and showing the toolhead unattached so people know that is expected.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n2"></td><td class="id">TP-02</td><td class="page">assembly<span class="new">new page</span></td><td class="shot"><b>Fitting the stepper toolhead</b><span>Highest priority in the whole list. Where it mounts, the four screw positions, and the finished result. This is now the first thing an owner does and there is no image of it anywhere.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n3"></td><td class="id">TP-03</td><td class="page">1sttimeuse</td><td class="shot"><b>Power socket under the base board</b><span>Machine tipped up at the front. People cannot find this.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n4"></td><td class="id">TP-04</td><td class="page">1sttimeuse</td><td class="shot"><b>Wi-Fi list showing "terraPen"</b><span>Confirms they are looking at the right network.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n5"></td><td class="id">TP-05</td><td class="page">1sttimeuse</td><td class="shot"><b>The macOS captive portal</b><span>So people recognise the window they are being told to close.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n6"></td><td class="id">TP-06</td><td class="page">1sttimeuse</td><td class="shot"><b>Interface on first load</b><span>Current full-window view.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n7"></td><td class="id">TP-07</td><td class="page">connectToPersonalNetwork</td><td class="shot"><b>Where the network settings live</b><span>The existing SSID and password crops are good, but there is no wider shot showing how to reach that screen.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n8"></td><td class="id">TP-08</td><td class="page">connectToPersonalNetwork</td><td class="shot"><b>Network list with "terraPen" gone</b><span><span class="new">new</span> Your verification trick, made visual — side by side with TP-04 it says everything.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n9"></td><td class="id">TP-09</td><td class="page">1stPlot</td><td class="shot"><b>Paper under the corner tabs</b><span>Square to the machine, flat, with the tab detail close up.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n10"></td><td class="id">TP-10</td><td class="page">1stPlot</td><td class="shot"><b>The limit switches</b><span><span class="new">new</span> Where they are on the machine, so homing is not a black box.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n11"></td><td class="id">TP-11</td><td class="page">1stPlot</td><td class="shot"><b>Pen fitted in the holder</b><span>Correctly seated and tight.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n12"></td><td class="id">TP-12</td><td class="page">1stPlot</td><td class="shot"><b>Nib set to the paper, side-on</b><span>The money shot. Ideally a pair — nib level versus nib fractionally into the paper — since "slightly below" is the bit people get wrong.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n13"></td><td class="id">TP-13</td><td class="page">1stPlot</td><td class="shot"><b>Setting Z zero, then +5 mm in terraForge</b><span><span class="new">new</span> The jog panel at both points, so the procedure is unambiguous.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n14"></td><td class="id">TP-14</td><td class="page">1stPlot</td><td class="shot"><b>A finished first plot</b><span>End the page on a result. The guide never shows a completed drawing.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n15"></td><td class="id">TP-15</td><td class="page">plotting</td><td class="shot"><b>Checking extents with the pen up</b><span>Carriage at a bounding-box corner above the paper.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n16" checked></td><td class="id">TP-16</td><td class="page">movingThePenCarriage</td><td class="shot"><b>terraForge jog panel</b><span class="new">ported</span><span><span class="new">new</span> Home, pen up/down and set Z zero labelled. The guide now sends people here constantly.</span></td><td>Diagram</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n17"></td><td class="id">TP-17</td><td class="page">movingThePenCarriage</td><td class="shot"><b>Web UI jog wheel with rings marked</b><span>Existing image re-marked with 100 / 10 / 1 / 0.1 mm.</span></td><td>Diagram</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n18" checked></td><td class="id">TP-18</td><td class="page">terraForge</td><td class="shot"><b>Canvas with artwork on the bed</b><span class="new">ported</span><span>terraForge already has 30 screenshots in its own repo — curate rather than reshoot.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n19" checked></td><td class="id">TP-19</td><td class="page">terraForge</td><td class="shot"><b>G-code options and toolpath preview</b><span class="new">ported</span><span>The step that most distinguishes terraForge from the old workflow.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n20" checked></td><td class="id">TP-20</td><td class="page">terraForge</td><td class="shot"><b>Upload to SD, and a job running</b><span class="new">part ported</span><span>The running-job panel is ported; a capture of the upload step itself is still wanted.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n21" checked></td><td class="id">TP-21</td><td class="page">ConnectTethered</td><td class="shot"><b>Machine settings with USB selected</b><span class="new">ported</span><span><span class="new">new</span> The one control that makes USB work — worth showing precisely.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n22"></td><td class="id">TP-22</td><td class="page">uploadingFiles</td><td class="shot"><b>SD Files panel mid-upload</b><span>Progress indicator and the storage figure.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n23"></td><td class="id">TP-23</td><td class="page">restartTerraPen</td><td class="shot"><b>ESP3D tab and the red power icon</b><span>Referenced in the Wi-Fi flow but never shown.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n24"></td><td class="id">TP-24</td><td class="page">troubleshooting</td><td class="shot"><b>Alarm banner and the clear button</b><span>The most common thing a new owner hits.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n25"></td><td class="id">TP-25</td><td class="page">terraPenWebUI</td><td class="shot"><b>Re-shot annotated interface map</b><span>The current one is a JPEG of an older UI, and it is the highest-traffic image in the guide.</span></td><td>Diagram</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n26"></td><td class="id">TP-26</td><td class="page">index</td><td class="shot"><b>Hero photograph</b><span>The machine mid-plot rather than static — it sells what the thing does.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n27"></td><td class="id">TP-27</td><td class="page">LightburnProfiles</td><td class="shot"><b>Verify the five Lightburn screenshots</b><span>Check they still match current Lightburn; re-shoot any that have drifted. Tied to R3.</span></td><td>Screenshot</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note"><b>Five of these came free.</b> The terraForge repository already had them under an MIT licence, so the canvas, machine configuration, G-code generation, jog panel and running-job shots are ported and live, credited on the terraForge page. They also corrected labels this guide had been guessing at — the buttons are <b>Run Homing</b> and <b>Set Zero</b>, and the connection choice is <b>Wifi / Usb</b>. Worth re-checking them against 1.4.0-rc7, since they were shot for user guide 1.3.</div>
+
+    <div class="note"><b>Two conventions worth adopting while you shoot.</b> Rename files without spaces or symbols — <code>AlarmOff$X.png</code> contains a <code>$</code>, and most existing names contain spaces, which makes them awkward in URLs and some tooling. And shoot UI captures at a consistent width so the pages stop jumping between image sizes.</div>
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Video and screen recordings</h2>
+      <p>Worth doing — three or four of these carry things that stills genuinely cannot. Ranked by how much the video earns its place over a photograph.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th></th><th>ID</th><th>Page</th><th>Recording</th><th>Length</th></tr>
+        </thead>
+        <tbody id="vids">
+          <tr><td class="tick"><input type="checkbox" data-id="v1"></td><td class="id">VID-01</td><td class="page">1stPlot</td><td class="shot"><b>Setting the pen height</b><span>The highest-value video on the list. Nib down to the paper, set Z zero, jog +5 — plus the "fractionally into the paper" nuance, which is nearly impossible to convey in a still and is the thing people get wrong. Shoot side-on and close.</span></td><td>30–45s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v2"></td><td class="id">VID-02</td><td class="page">terraForge</td><td class="shot"><b>End to end in terraForge</b><span>Import an SVG, place it on the bed, generate G-code, upload, plot. One continuous take showing that the whole job lives in one app — this is the clearest argument for terraForge over the old workflow.</span></td><td>60–90s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v3"></td><td class="id">VID-03</td><td class="page">assembly</td><td class="shot"><b>Fitting the toolhead</b><span>Four screws, hex key, done. Assembly is exactly the kind of thing where watching once beats reading three times — and it is now the owner's first task.</span></td><td>30–60s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v4"></td><td class="id">VID-04</td><td class="page">1stPlot</td><td class="shot"><b>A homing cycle running</b><span>Shows the movement and the sound to expect, so a first-timer does not panic and cut power mid-cycle.</span></td><td>10–20s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v5"></td><td class="id">VID-05</td><td class="page">index</td><td class="shot"><b>The machine plotting</b><span>Ambient hero clip for the front page. Sells what the thing does better than any static photograph.</span></td><td>10–15s loop</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v6"></td><td class="id">VID-06</td><td class="page">connectToPersonalNetwork</td><td class="shot"><b>Wi-Fi setup, start to finish</b><span>Screen recording through the settings, the restart, and the network list check at the end. A multi-screen flow that is tedious to document in stills.</span></td><td>45–60s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v7"></td><td class="id">VID-07</td><td class="page">troubleshooting</td><td class="shot"><b>Clearing an alarm</b><span>Short screen capture: what the alarm looks like, and the click that clears it.</span></td><td>10–15s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v8"></td><td class="id">VID-08</td><td class="page">uploadingFiles</td><td class="shot"><b>Uploading through the web UI</b><span>Lowest priority — the stills cover this adequately. Only worth it if you are already recording.</span></td><td>20–30s</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note"><b>How to shoot them so they work in the docs.</b> Silent, and short enough to loop — documentation video is watched with the sound off, so anything essential has to be visible, not narrated. MP4 (H.264) rather than GIF: far smaller at the same quality, and it can be paused. Crop screen recordings to the panel in question rather than capturing the whole desktop, or the detail is unreadable on a phone. Give each one a poster frame so the page does not show a black rectangle before playback.</div>
+
+    <div class="note"><b>Where to put the files — decide this before you shoot.</b> Video committed to git stays in the repository's history forever, and this repo has no Git LFS rules set up despite an <code>[lfs]</code> section lingering in an old config. Two workable options: keep clips under a couple of megabytes and add LFS tracking for <code>*.mp4</code>, or host them on YouTube or Vimeo and embed. For a docs site this size I would host the long ones externally and commit only the short loops. Say which you prefer and I will wire up the markup and, if needed, the LFS configuration.</div>
+
+    <div class="note"><b>One editorial rule.</b> Video supplements the written steps, never replaces them. Nobody can skim, search, or copy a filename out of a video, and a reader halfway through a plot with inky hands needs the text. Every video should sit alongside the steps it illustrates, not in place of them.</div>
+  </section>
+
+  <!-- ================= CONTENT GAPS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Content gaps</h2>
+      <p>Things the guide still does not cover. None block publishing, but each is a question owners will ask.</p>
+    </div>
+
+    <div class="gaps">
+      <div class="gap"><h3>Safety</h3><p>Nothing tells people to keep fingers and hair clear of a moving gantry, or what to do when the pen crashes. One short section covers it.</p></div>
+      <div class="gap"><h3>Maintenance</h3><p>No guidance on belt tension, rail cleaning, pen storage, or what wears out. Owners will ask on Discord instead.</p></div>
+      <div class="gap"><h3>Bed flatness</h3><p>You described setting the nib slightly into the paper because beds are not flat. That implies a fuller page on levelling and what "good enough" looks like.</p></div>
+      <div class="gap"><h3>Pens and paper</h3><p>"Most pens fit" is all there is. Which pens and stocks work, and what to avoid — the most common beginner question for any plotter.</p></div>
+      <div class="gap"><h3>The empty blog</h3><p><code>docs/blog/index.md</code> contains the single word "Blog" and is not in the navigation. Start it or delete it.</p></div>
+      <div class="gap"><h3>A stray file is published</h3><p><code>docs/all text.rtf</code> is 7 bytes, effectively empty, and is copied to the live site as a download. It should go.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Live at <a href="https://warderoid-ctrl.github.io/terraPenDocumentation/">warderoid-ctrl.github.io/terraPenDocumentation</a>, republished on every push to <code>main</code>. Builds under <code>mkdocs --strict</code>, so a broken link or bad anchor fails the run rather than publishing quietly.
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var KEY="terrapen-docs-shots-v2";
+  var boxes=document.querySelectorAll("#shots input[type=checkbox], #vids input[type=checkbox]");
+  var saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{}; }catch(e){ saved={}; }
+  boxes.forEach(function(b){
+    if(saved[b.dataset.id]){ b.checked=true; }
+    b.closest("tr").classList.toggle("done",b.checked);
+    b.addEventListener("change",function(){
+      b.closest("tr").classList.toggle("done",b.checked);
+      var state={};
+      boxes.forEach(function(x){ if(x.checked) state[x.dataset.id]=1; });
+      try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
