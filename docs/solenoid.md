@@ -25,13 +25,31 @@ differences.
 No difference. Your machine has limit switches, so home it at the start of every
 session exactly as described in [Your first plot](1stPlot.md#2-home-the-machine).
 
+## Pen up and pen down
+
+A solenoid has **two positions**, not a range:
+
+| | |
+|---|---|
+| **Z0** | Pen down, on the paper |
+| **Z1** | Pen up, clear of the paper |
+
+There is roughly **14 mm of travel on the rail** between them.
+
+!!! note "Different from the stepper"
+    Do not use the stepper procedure of setting zero and jogging up by a set amount.
+    Your pen has only two positions, and how far it lifts is decided by where you set
+    the pen, not by a jog command.
+
 ## Setting pen height
 
-The procedure is the same as for the stepper — bring the nib to the paper, set zero,
-then jog up about 5 mm. You have roughly **14 mm** of travel to work with.
+Set the pen so that when it lifts it clears the paper by **between 5 mm and 14 mm**.
 
-See [setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height) for the full
-method, including why you want the nib set fractionally into the paper.
+Less than about 5 mm risks the nib catching as the paper warps during a long plot.
+Fourteen millimetres is the limit of the rail.
+
+As with any pen plotter the down position takes practice — you want the nib firmly on
+the paper rather than just touching, so it keeps contact across any dips in the bed.
 
 !!! tip "Check the solenoid actuated"
     When the machine powers on, the solenoid should move to its upright position. If

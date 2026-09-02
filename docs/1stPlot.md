@@ -49,6 +49,11 @@ page.
 
 That gives you a pen that draws at Z0 and lifts 5 mm clear.
 
+!!! note "Solenoid machines work differently"
+    If your terraPen has a [solenoid pen lift](solenoid.md), the pen has only two
+    positions and the lift is set mechanically — see
+    [pen up and pen down](solenoid.md#pen-up-and-pen-down).
+
 !!! tip "Aim slightly *into* the paper"
     Neither the bed nor the paper is perfectly flat. When setting zero, you actually
     want the nib fractionally **below** the paper surface, so the spring can keep
