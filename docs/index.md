@@ -29,6 +29,14 @@ guide takes you from unboxing to your first finished drawing.
 - Paper, up to A2 (594 × 420 mm)
 - A pen — one is included
 
+## Prefer a PDF?
+
+The whole guide is available as a single document:
+<strong><a href="pdf/terraPen-guide.pdf">download the terraPen guide (PDF)</a></strong>.
+
+The website is always the current version — the PDF is regenerated from it every time
+the site is published, so it cannot drift out of date.
+
 ## Getting help
 
 - Website — [terrapen.xyz](https://www.terrapen.xyz)

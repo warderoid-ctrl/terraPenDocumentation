@@ -1,6 +1,10 @@
 FROM docker.io/squidfunk/mkdocs-material:9.5.34
 
-RUN apk add --no-cache --update nodejs npm
+# nodejs/npm for cspell; the rest are WeasyPrint's native dependencies, needed by
+# the pdf-export plugin (libgobject, pango and friends are not in the base image).
+RUN apk add --no-cache --update \
+      nodejs npm \
+      glib pango gdk-pixbuf fontconfig ttf-dejavu
 
 WORKDIR /site
 COPY ./package*.json /site/
