@@ -3,6 +3,10 @@
 Your terraPen ships with the stepper toolhead **not attached**. Fitting it is the
 first thing to do, and it is the only assembly required.
 
+!!! note "Solenoid machines"
+    If you have an earlier terraPen with a [solenoid pen lift](solenoid.md), your
+    toolhead is already fitted — skip to [First time setup](1sttimeuse.md).
+
 You will need the hex key supplied in the box.
 
 ## Steps

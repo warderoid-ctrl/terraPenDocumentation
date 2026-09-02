@@ -28,7 +28,7 @@ The settings that matter for a terraPen:
 |---|---|
 | **Bed width / height** | `594` × `420` mm for the A2 terraPen |
 | **Origin** | Bottom-left |
-| **Pen type** | Match your toolhead — **stepper** on current machines |
+| **Pen type** | Match your toolhead — **stepper** on current machines. [Solenoid machines](solenoid.md) need pen commands and delays set too. |
 | **Connection** | **Wifi** or **Usb** |
 | **Host / IP** | `terrapen.local`, or the address your router assigned |
 

@@ -7,6 +7,10 @@ works on the terraPen.
     [terraForge](terraForge.md) is built for this machine and needs none of the setup
     below. These instructions are here for people already working in Lightburn.
 
+!!! note "Solenoid machines"
+    The profiles below cover both solenoid and servo toolheads. See
+    [Solenoid pen lift](solenoid.md) for the other settings those machines need.
+
 ## Download a profile
 
 Pick the profile matching your toolhead, from the

@@ -56,6 +56,17 @@ Bring the nib to the paper, set Z zero, then jog up 5 mm. Aim to set zero
 *fractionally into* the paper so the spring keeps the pen down over any dips in the
 bed. See [Your first plot](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
+## I have an older machine with a solenoid — does this guide apply?
+
+Yes, almost all of it. Setup, Wi-Fi, homing, paper, plotting and stopping are the
+same. See [Solenoid pen lift](solenoid.md) for the handful of differences, mainly the
+terraForge pen settings.
+
+## Do you still sell the solenoid toolhead?
+
+No. Current machines use a stepper toolhead. Existing solenoid machines are still
+supported — see [Solenoid pen lift](solenoid.md).
+
 ## What pens can I use?
 
 Most pens fit. Pen height matters far more than pen brand.

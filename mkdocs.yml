@@ -102,6 +102,8 @@ nav:
       - terraForge: terraForge.md
       - Uploading files: uploadingFiles.md
       - Lightburn profiles and settings: LightburnProfilesAndSettings.md
+  - Older machines:
+      - Solenoid pen lift: solenoid.md
   - Connecting:
       - Connect to your own Wi-Fi: connectToPersonalNetwork.md
       - Connect via USB-C: ConnectTethered.md

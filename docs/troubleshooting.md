@@ -73,6 +73,18 @@ FluidNC's development and it helps to know it is still happening.
 The origin was not where you thought. Home the machine, set your zero again if the job
 needs one, and check that your G-code was exported with an absolute origin.
 
+## The pen drags between shapes, or starts drawing before it lands
+
+On a machine with a [solenoid pen lift](solenoid.md), this usually means the **pen
+delays** are too short or missing. The solenoid needs time to physically move before
+the machine starts the next move.
+
+Set both the pen-down and pen-up delay to **250 ms** in your terraForge machine
+profile — see [terraForge settings](solenoid.md#terraforge-settings).
+
+Also check the solenoid actuated on power-up and is sitting upright. If it did not,
+the pen will not lift at all.
+
 ## The pen crashes into the bed
 
 Stop and cut power. Most often Z zero is set too low, or was set against a different

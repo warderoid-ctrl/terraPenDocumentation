@@ -41,6 +41,9 @@ The stepper toolhead has roughly **14 mm** of Z travel. In normal use you only n
 about 5 mm of it — see
 [setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
+On an earlier machine with a [solenoid pen lift](solenoid.md), the pen is driven up
+and down by the solenoid rather than a stepper.
+
 !!! warning "Mind the bed"
     Z zero is wherever you last set it, normally with the nib on the paper. Jogging
     down from there drives the nib into the bed. Use pen up and pen down rather than
