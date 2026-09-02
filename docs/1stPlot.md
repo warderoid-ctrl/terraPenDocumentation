@@ -71,6 +71,10 @@ That gives you a pen that draws at Z0 and lifts 5 mm clear.
     pulling the pen down as it crosses any dips. A nib set exactly level will skip on
     the low spots.
 
+    On a [solenoid machine](solenoid.md) the principle is the same, but it is
+    **gravity** doing the work rather than a spring — the pen simply drops onto the
+    page. Set it slightly low for the same reason.
+
 !!! note "Why 5 mm, and when you need more"
     Paper warps as ink goes onto it, so the sheet you started on is not the sheet you
     finish on. 5 mm of clearance means the pen still passes over raised areas later in

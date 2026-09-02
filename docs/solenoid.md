@@ -51,6 +51,14 @@ Fourteen millimetres is the limit of the rail.
 As with any pen plotter the down position takes practice — you want the nib firmly on
 the paper rather than just touching, so it keeps contact across any dips in the bed.
 
+!!! tip "Gravity does the work"
+    A solenoid machine has no spring pressing the pen down. When the solenoid releases,
+    **the pen drops onto the page under its own weight.**
+
+    So set the pen slightly low rather than exactly level with the paper. Neither the
+    bed nor the paper is perfectly flat, and gravity will keep the nib in contact
+    across the dips — but only if there is somewhere for the pen to fall to.
+
 !!! tip "Check the solenoid actuated"
     When the machine powers on, the solenoid should move to its upright position. If
     it does not, the pen will not lift during a plot.

@@ -137,9 +137,11 @@ settings.
 This is nearly always **pen height**. Too high and the nib skips; too low and it drags
 or tears.
 
-Because neither the bed nor the paper is perfectly flat, set Z zero fractionally
+Because neither the bed nor the paper is perfectly flat, set the pen fractionally
 *into* the paper rather than exactly level — the spring then keeps the nib down across
-any dips. See [setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height).
+any dips. On a [solenoid machine](solenoid.md) it is gravity rather than a spring, but
+set it slightly low for the same reason. See
+[setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
 Also check the pen is tight in the holder and the paper is flat and well secured.
 
