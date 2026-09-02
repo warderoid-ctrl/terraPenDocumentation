@@ -23,5 +23,9 @@ the machine when you need to reach the power inlet underneath.
 Paper larger than the drawing area will overhang the machine, which is fine — but
 [the artwork itself must fit](plotting.md), or the plot will crash.
 
+Between jobs it does not have to occupy the bench at all: the machine stands on its
+left-hand side on built-in rubber bumpers, taking roughly 800 × 110 mm of floor —
+see [transport and storage](transport.md).
+
 !!! note "Earlier machines"
     Machines with a [solenoid pen lift](solenoid.md) differ in the toolhead only.

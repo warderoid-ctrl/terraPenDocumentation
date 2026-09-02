@@ -16,8 +16,6 @@ Lift by the **base**, never by the gantry, the rail or the toolhead. Those parts
 and taking the machine's weight through them puts load somewhere it was not designed
 to go.
 
-Keep the machine flat. Do not stand it on end.
-
 ## Taking it somewhere with different Wi-Fi
 
 This is the part that catches people out, and it is worth setting up before you leave
@@ -27,10 +25,27 @@ see [trade shows, schools and locked networks](connectToPersonalNetwork.md#trade
 
 Take the adaptor, and a spare pen or two.
 
-## Storing it
+## Storing it on its side
+
+The terraPen is a big object to leave on a bench between jobs, so it is **designed to
+stand on its left-hand side**. There are **rubber bumpers on that side** for exactly
+this purpose.
+
+Stood up, it takes very little floor space — tuck it against a wall, or between other
+furniture, and it stays out of the way.
+
+1. Take the pen out and remove the paper.
+2. Switch off and unplug.
+3. Stand it on its **left-hand side**, resting on the rubber bumpers.
+
+!!! note "Left side, on the bumpers"
+    The bumpers are what the machine is meant to rest on. Standing it on any other
+    edge puts the weight somewhere that was not designed to take it.
+
+## Other storage notes
 
 - Cover it, or keep it somewhere dust-free.
-- Store it flat, with no weight on the gantry.
+- Do not rest anything on the gantry.
 - Leave the pen out.
 
 !!! note "Coming back to it"
