@@ -198,15 +198,15 @@
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">terraPen documentation · worklist · site live · updated 2 September 2026</div>
+    <div class="eyebrow">terraPen documentation · worklist · 26 pages live · updated 2 September 2026</div>
     <h1>What the docs still need</h1>
-    <p class="standfirst">Every question but one is answered and written into the guide, and the site is live at <a href="https://warderoid-ctrl.github.io/terraPenDocumentation/">warderoid-ctrl.github.io/terraPenDocumentation</a>. What remains is the photography and the video.</p>
+    <p class="standfirst">The guide is live at <a href="https://warderoid-ctrl.github.io/terraPenDocumentation/">warderoid-ctrl.github.io/terraPenDocumentation</a> — 26 pages, and about six times the words it started with. Five questions are open, none of them blocking. What remains is mostly photography.</p>
     <div class="counts">
       <div class="count good"><b>12</b><span>Answered</span></div>
       <div class="count open"><b>5</b><span>Still open</span></div>
-      <div class="count"><b>24</b><span>Images left</span></div>
-      <div class="count"><b>8</b><span>Videos</span></div>
-      <div class="count"><b>4,900</b><span>Words now</span></div>
+      <div class="count"><b>28</b><span>Images left</span></div>
+      <div class="count"><b>9</b><span>Videos</span></div>
+      <div class="count"><b>11,400</b><span>Words now</span></div>
     </div>
   </header>
 
@@ -227,6 +227,12 @@
       <div class="log-row"><div class="log-id">Q7</div><div class="log-body"><b>Wi-Fi setup gained a way to tell it worked</b><span>Your check is now the centrepiece of the page: if <code>terraPen</code> has vanished from the available networks, it joined yours; if it is still there, it fell back. Far better than telling people to dig through router settings.</span></div></div>
       <div class="log-row"><div class="log-id">R1</div><div class="log-body"><b>The web UI Home button does home</b><span>It homes <b>X and Y</b> — there is no switch on Z. The hedge sending readers to terraForge for "real" homing is gone, and the first-plot page now says explicitly that Z is not homed, which is precisely why you set it by hand against the paper in the next step.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>The terraPen has a power switch now</b><span>Rear right. Applied across six pages that previously said the opposite — the "no power switch" note, the smart-plug workaround, the FAQ answer, and every power-cycle instruction. Restarting is now a switch rather than a trip to the wall socket.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Six new pages, after comparing against NextDraw and UUNA</b><span>Safety (there was none), Specifications, Maintenance, Transport and storage, Getting support, and Cutting vinyl. Plus a PDF edition of the whole guide, generated on every publish.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Cutting vinyl</b><span>Drag knife plus terraForge's experimental cutting mode: enabling the feature, blade-offset compensation and why it exists, the weed border, and the warning to turn path joining off for knife work.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Uploads fail over the access point</b><span>Not just slow — a large file can fail outright. Plus the size check against terraForge's file browser, and the symptom it explains: a plot that stops part way through the drawing.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Do not re-tape a buckling plot</b><span>Re-fixing paper mid-run shifts it relative to the work already drawn. The fix is prospective: more Z lift next time.</span></div></div>
+      <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Pen lift is a range, not a number</b><span>5 mm for most work, 10 mm for heavily warping paper, full travel for a paintbrush — and more lift costs time on every pen-up move.</span></div></div>
+      <div class="log-row"><div class="log-id">FIX</div><div class="log-body"><b>Two corrections to things I had assumed</b><span>Storage said keep it flat and never stand it on end; the machine has rubber bumpers on its left side precisely so it can be stood up. And the "set the nib slightly low" advice was explained by a spring, which solenoid machines do not have — there it is gravity.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Hardware and source files page</b><span>Links the mechanical, electronics, driver and firmware repositories, and carries the controller pinout. The board diagram also solved the blocking shot for the limit switch wiring check.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Limit switch failure and crash recovery</b><span>Power down at the rear switch, hand-move the head 50 mm clear, then test both optical switches with a piece of paper and look for the green light. Written up in troubleshooting with a pointer from the FAQ. Needs two photos before it is genuinely usable — the lit switch, and the board connectors.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Reconnecting to a running plot can kill it</b><span>A FluidNC websocket limitation, now documented as a decision made before pressing Start: stay connected and keep the ability to pause, or walk away and leave it alone. The middle case — disconnecting then reconnecting out of curiosity — is the one that loses the sheet. Covered on the plotting page, the first plot, the FAQ and troubleshooting.</span></div></div>
@@ -323,6 +329,9 @@ should be        594                         420</div>
           <tr><td class="tick"><input type="checkbox" data-id="n25"></td><td class="id">TP-25</td><td class="page">terraPenWebUI</td><td class="shot"><b>Re-shot annotated interface map</b><span>The current one is a JPEG of an older UI, and it is the highest-traffic image in the guide.</span></td><td>Diagram</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n26"></td><td class="id">TP-26</td><td class="page">index</td><td class="shot"><b>Hero photograph</b><span>The machine mid-plot rather than static — it sells what the thing does.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="n27"></td><td class="id">TP-27</td><td class="page">LightburnProfiles</td><td class="shot"><b>Verify the five Lightburn screenshots</b><span>Check they still match current Lightburn; re-shoot any that have drifted. Tied to R3.</span></td><td>Screenshot</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n28"></td><td class="id">TP-28</td><td class="page">transport</td><td class="shot"><b>The machine stood on its side</b><span class="new">new</span><span>Resting on the left-hand bumpers, tucked against a wall. This is a selling point for a machine this size and currently only described in words.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n29"></td><td class="id">TP-29</td><td class="page">vinyl</td><td class="shot"><b>Blade holder fitted in place of the pen</b><span class="new">new</span><span>Close enough to see how the holder sits, since it replaces the pen rather than the toolhead.</span></td><td>Photo</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="n30"></td><td class="id">TP-30</td><td class="page">vinyl</td><td class="shot"><b>A cut, and the same design weeded</b><span class="new">new</span><span>A pair showing the cut on the mat and the finished weeded result — the clearest way to explain kiss cutting.</span></td><td>Photo</td></tr>
         </tbody>
       </table>
     </div>
@@ -352,6 +361,7 @@ should be        594                         420</div>
           <tr><td class="tick"><input type="checkbox" data-id="v5"></td><td class="id">VID-05</td><td class="page">index</td><td class="shot"><b>The machine plotting</b><span>Ambient hero clip for the front page. Sells what the thing does better than any static photograph.</span></td><td>10–15s loop</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="v6"></td><td class="id">VID-06</td><td class="page">connectToPersonalNetwork</td><td class="shot"><b>Wi-Fi setup, start to finish</b><span>Screen recording through the settings, the restart, and the network list check at the end. A multi-screen flow that is tedious to document in stills.</span></td><td>45–60s</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="v7"></td><td class="id">VID-07</td><td class="page">troubleshooting</td><td class="shot"><b>Clearing an alarm</b><span>Short screen capture: what the alarm looks like, and the click that clears it.</span></td><td>10–15s</td></tr>
+          <tr><td class="tick"><input type="checkbox" data-id="v9"></td><td class="id">VID-09</td><td class="page">vinyl</td><td class="shot"><b>A vinyl cut, start to weeded</b><span class="new">new</span><span>Cutting mode is experimental and unfamiliar to most people. Watching a sheet go from blank to weeded explains it far faster than the page can.</span></td><td>45–60s</td></tr>
           <tr><td class="tick"><input type="checkbox" data-id="v8"></td><td class="id">VID-08</td><td class="page">uploadingFiles</td><td class="shot"><b>Uploading through the web UI</b><span>Lowest priority — the stills cover this adequately. Only worth it if you are already recording.</span></td><td>20–30s</td></tr>
         </tbody>
       </table>
