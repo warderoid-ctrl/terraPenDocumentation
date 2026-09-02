@@ -51,8 +51,9 @@ too. See [Connect via USB-C](ConnectTethered.md).
 
 ## What do I do if the machine crashes into itself?
 
-**Power it down immediately** using the switch at the rear right. It means a limit
-switch was not seen. See
+**Power it down immediately** using the switch at the rear right. Usually either the
+artwork is bigger than the bed, or a limit switch was not seen. Nothing on the machine
+catches either one. See
 [the machine is crashing into itself](troubleshooting.md#the-machine-is-crashing-into-itself)
 for how to recover and check the switches.
 

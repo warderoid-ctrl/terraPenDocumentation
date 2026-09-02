@@ -24,6 +24,12 @@ Any tool that outputs G-code will work:
 
 Save files with a `.g` extension.
 
+!!! warning "Check it fits before you send it"
+    The terraPen will attempt any job it is given, including one larger than the bed,
+    and will crash trying — see
+    [plotting area and paper](plotting.md). Tools other than terraForge do not show
+    your work against the machine's bed, so the size check is yours to make.
+
 ## Uploading by hand
 
 If you have a G-code file from another tool, terraForge will upload it for you — drop

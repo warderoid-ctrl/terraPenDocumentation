@@ -7,6 +7,20 @@ that, not just in the centre.
 
 ![terraPen A2 plotting area](img/terraPenA2 LineArt.png)
 
+!!! danger "Oversized artwork is not rejected — it crashes the machine"
+    Nothing checks whether a job fits before it runs. Send an A1 drawing to an A2
+    machine and the terraPen will start plotting it, drive into the end of its travel,
+    and keep pushing.
+
+    There are no soft or hard limits to catch this — see
+    [there is nothing to stop you](movingThePenCarriage.md#there-is-nothing-to-stop-you).
+    **Checking the artwork fits is your job, not the machine's.**
+
+[terraForge](terraForge.md) is the best protection here: it shows your artwork on a
+representation of the bed, so anything hanging over the edge is visible before you
+send it. Make sure your machine profile is set to the real bed size of 594 × 420 mm,
+or the picture it shows you will be wrong.
+
 ## Mounting your paper
 
 - Place the paper square to the machine, with its edges parallel to the X axis.

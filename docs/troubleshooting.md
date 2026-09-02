@@ -12,12 +12,27 @@ search:
 
 ## The machine is crashing into itself
 
-This means a **limit switch has not been seen** — the machine keeps driving because
-nothing told it that it had reached the end.
-
 !!! danger "Power it down straight away"
     Switch the terraPen off at the **rear right**. Do not wait to see whether it stops
     on its own, and do not try to fix it while it is still moving.
+
+There are two common causes. Neither is caught by the machine, because there are no
+soft or hard limits — see
+[there is nothing to stop you](movingThePenCarriage.md#there-is-nothing-to-stop-you).
+
+### 1. The artwork is bigger than the bed
+
+The most common cause, and the easiest to rule out. An A1 drawing sent to an A2
+machine will start plotting and simply run out of travel.
+
+Check the dimensions of your artwork. In [terraForge](terraForge.md) you can see it
+against the bed before you send it — and check your machine profile really does say
+594 × 420 mm, or that picture is misleading.
+
+### 2. A limit switch was not seen
+
+If the job definitely fits, the machine did not see a switch when homing, and kept
+driving because nothing told it it had reached the end.
 
 ### Getting it moving again
 
