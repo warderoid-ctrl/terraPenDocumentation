@@ -61,11 +61,18 @@ That gives you a pen that draws at Z0 and lifts 5 mm clear.
 
 ## 4. Run the plot
 
-1. Refresh the file list to see what is on the SD card.
-2. Check the paper is secure and the pen is tight in the holder.
-3. Press **play** on the file you want to plot.
+In [terraForge](terraForge.md):
 
-After a short pause of about ten seconds, the terraPen starts drawing.
+1. Find your file in the **file browser** — the sample files are already on the SD card.
+2. Check the paper is secure and the pen is tight in the holder.
+3. Press **Start job**.
+
+After a short pause, the terraPen starts drawing.
+
+!!! tip "If you need to stop, press Pause"
+    Pausing is safe and you can resume. Aborting drops the machine into an alarm and
+    means homing again — see
+    [Starting, pausing and stopping a plot](startingAplot.md#stopping-a-plot-pause-first).
 
 !!! success "That's it"
     The artwork lives on the terraPen's SD card, so nothing needs to stay connected.

@@ -1,7 +1,11 @@
 # The terraPen web interface
 
-The web interface is how you control the machine. It is served by the terraPen itself,
-so there is nothing to install.
+The terraPen serves its own web interface, so there is nothing to install. It is
+useful for setup, for quick checks, and when you are away from your own computer.
+
+!!! note "Plotting is done in terraForge"
+    For everyday work — generating G-code, uploading and running jobs — use
+    [terraForge](terraForge.md). This page is a reference for the built-in interface.
 
 ![The terraPen web interface, with each panel labelled](img/quick-start-guide-UX-markup.jpg)
 
@@ -72,7 +76,8 @@ Press the **play** icon on a row to start plotting that file:
 
 ![Play button on a file row](img/UI PlayFile.png)
 
-See [Uploading files](uploadingFiles.md).
+See [Uploading files](uploadingFiles.md), though
+[terraForge](terraForge.md) handles uploading and plotting more comfortably.
 
 ### G — Serial console
 

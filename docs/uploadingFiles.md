@@ -3,10 +3,10 @@
 The terraPen draws from **G-code** files — plain text instructions describing where to
 move and when to raise and lower the pen.
 
-!!! tip "The easy route"
-    [terraForge](terraForge.md) generates G-code from your artwork and uploads it to
-    the machine for you. Use it unless you have a reason not to — the rest of this
-    page describes doing it by hand.
+!!! tip "Use terraForge"
+    [terraForge](terraForge.md) generates G-code from your artwork, uploads it to the
+    machine and runs it, all in one place. That is the route to use. The rest of this
+    page covers making G-code elsewhere, and uploading by hand if you need to.
 
 ## Making G-code
 
@@ -24,7 +24,12 @@ Any tool that outputs G-code will work:
 
 Save files with a `.g` extension.
 
-## Uploading through the web interface
+## Uploading by hand
+
+If you have a G-code file from another tool, terraForge will upload it for you — drop
+it into the file browser and send it to the machine.
+
+### Through the web interface
 
 1. Go to the **SD Files** panel (F).
 2. Click **Upload**.
@@ -36,7 +41,7 @@ A progress indicator appears while the files transfer.
     Detailed plots can be several megabytes, and the upload is not fast. Let it finish
     before starting a job.
 
-## Managing files on the card
+### Managing files on the card
 
 - **Folders** — click the *add folder* icon to create one, then open it to upload
   inside. Worth doing once you have more than a handful of plots.

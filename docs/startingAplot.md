@@ -1,38 +1,51 @@
-# Starting, pausing and cancelling a plot
+# Starting, pausing and stopping a plot
+
+Plots are run from [terraForge](terraForge.md).
 
 ## Starting
 
-1. Find your `.g` file in the **SD Files** panel (F).
-2. Press the **play** icon on that row.
-3. The plot begins after a pause of about ten seconds.
+1. Select your file in the **file browser**, or upload it to the machine.
+2. Press **Start job**.
 
-!!! warning "Home the machine first"
-    Always [home](1stPlot.md#2-home-the-machine) before plotting, and set your own zero
-    afterwards if the job needs one. Starting from the wrong position is the most
-    common way to spoil a sheet.
-
-## While it runs
-
-In [terraForge](terraForge.md), the job panel shows progress by G-code line, with
-**Pause** and **Abort**:
+Progress appears in the job panel, counting through the G-code line by line:
 
 ![A job running in terraForge](img/terraforge-job-running.png)
 
-In the web interface, the **Job progress** panel (E) shows a progress bar with
-**Pause** and **Cancel** buttons.
+## Stopping a plot: pause first
 
-Pausing stops the carriage where it is. The pen lifts, so it will not bleed into the
-paper while you wait.
+!!! warning "Always pause before you abort"
+    **Pause** is the graceful stop. The machine finishes what it is doing, lifts the
+    pen, and waits — you can resume and carry on, and nothing else is disturbed.
 
-## After cancelling
+    **Abort** is not graceful. It drops the machine into an **alarm** state, because
+    the firmware stops trusting where the pen is. Clearing that is sometimes just a
+    reset, but it can mean powering the machine down and homing again before you can
+    do anything at all. It is a faff, and it is avoidable.
 
-Cancelling a plot puts the machine into an **alarm** state. This is normal and is the
-firmware protecting itself, because it no longer trusts its position.
+So the order to reach for is:
 
-To clear it, click the **Alarm** button at the left of the message, or send `$X` in
-the serial console.
+1. **Pause** — stops the machine safely, and you can resume.
+2. **Resume** — if you only needed to look at something, change a pen, or reseat the
+   paper.
+3. **Abort** — only once you have decided the plot is definitely finished with.
 
-!!! note "Nothing works until the alarm is cleared"
-    While the alarm is active you cannot jog the machine or start another plot.
+Pausing first also means that if you change your mind, you have not lost the job.
 
-After clearing an alarm, home the machine again before plotting.
+## After an abort
+
+The machine will be in alarm. To recover:
+
+1. Clear the alarm — the alarm control in terraForge, or `$X` in the console.
+2. **Run Homing** to re-establish position.
+3. Set your zero again if the job needed one.
+
+!!! note "If clearing the alarm is not enough"
+    Occasionally an abort leaves the machine unwilling to move even after the alarm is
+    cleared. Power the terraPen down at the wall, bring it back up, and home it. See
+    [Restarting the terraPen](restartTerraPen.md).
+
+## In the web interface
+
+The built-in [web interface](terraPenWebUI.md) can also start and stop plots, using
+**Pause** and **Cancel** in the job progress panel. The same rule applies — pause
+before you cancel.

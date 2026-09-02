@@ -51,7 +51,16 @@ bed. See [Your first plot](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
 Most pens fit. Pen height matters far more than pen brand.
 
-## Why does it go into alarm after I cancel a plot?
+## Why does it go into alarm when I abort a plot?
 
-Because the firmware no longer knows where the pen is. Clear the alarm, then home the
-machine again.
+Because the firmware no longer knows where the pen is. Clear the alarm and home the
+machine again — occasionally it needs a full power cycle first.
+
+You can usually avoid it: **pause** rather than abort. Pausing stops the machine
+safely and lets you resume. See
+[pause first](startingAplot.md#stopping-a-plot-pause-first).
+
+## Can I stop a plot part way and carry on later?
+
+Yes — that is exactly what **Pause** is for. The pen lifts and the machine waits until
+you resume.

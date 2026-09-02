@@ -7,11 +7,19 @@
 ## The machine will not move
 
 **It is probably in an alarm state.** FluidNC halts and refuses to move when it stops
-trusting its position — most often after a cancelled plot.
+trusting its position — most often after an aborted plot.
 
-Clear it with the **Alarm** button in the interface, or by sending `$X` in the serial
-console. Then [home the machine](1stPlot.md#2-home-the-machine) again before
-plotting.
+1. Clear the alarm — the alarm control in [terraForge](terraForge.md), or `$X` in the
+   console.
+2. [Home the machine](1stPlot.md#2-home-the-machine) again.
+
+If it still will not move, power the terraPen down at the wall, bring it back up, and
+home it.
+
+!!! tip "Avoid this next time"
+    Aborting a plot is what causes it. **Pause** instead — the machine stops safely
+    and you can resume, with no alarm and no re-homing. See
+    [pause first](startingAplot.md#stopping-a-plot-pause-first).
 
 ## I cannot reach terrapen.local
 
