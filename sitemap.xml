@@ -45,6 +45,10 @@
          <lastmod>2026-09-02</lastmod>
     </url>
     <url>
+         <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/maintenance/</loc>
+         <lastmod>2026-09-02</lastmod>
+    </url>
+    <url>
          <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/movingThePenCarriage/</loc>
          <lastmod>2026-09-02</lastmod>
     </url>
@@ -57,11 +61,23 @@
          <lastmod>2026-09-02</lastmod>
     </url>
     <url>
+         <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/safety/</loc>
+         <lastmod>2026-09-02</lastmod>
+    </url>
+    <url>
          <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/solenoid/</loc>
          <lastmod>2026-09-02</lastmod>
     </url>
     <url>
+         <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/specifications/</loc>
+         <lastmod>2026-09-02</lastmod>
+    </url>
+    <url>
          <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/startingAplot/</loc>
+         <lastmod>2026-09-02</lastmod>
+    </url>
+    <url>
+         <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/support/</loc>
          <lastmod>2026-09-02</lastmod>
     </url>
     <url>
@@ -70,6 +86,10 @@
     </url>
     <url>
          <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/terraPenWebUI/</loc>
+         <lastmod>2026-09-02</lastmod>
+    </url>
+    <url>
+         <loc>https://warderoid-ctrl.github.io/terraPenDocumentation/transport/</loc>
          <lastmod>2026-09-02</lastmod>
     </url>
     <url>
