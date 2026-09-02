@@ -33,6 +33,12 @@ Clear the bed, then run the homing cycle. Any of these does it:
 
 The carriage moves until it finds its switches and sets its origin from them.
 
+!!! tip "If homing does not work"
+    Something is wrong with a limit switch — see
+    [the machine is crashing into itself](troubleshooting.md#the-machine-is-crashing-into-itself).
+    You can still plot in the meantime by setting your origin by hand with **Set
+    Zero**.
+
 !!! note "Homing covers X and Y, not Z"
     There is no limit switch on the Z axis, so homing cannot find it. You set Z
     yourself in the next step, against the paper you are actually using.

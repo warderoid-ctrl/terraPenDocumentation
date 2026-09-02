@@ -51,6 +51,24 @@ If you still cannot get a green light, get in touch on
 [Discord](https://discord.gg/fEXrmUm5nR) — it may need a replacement cable, and we
 would rather send you one than have you keep testing.
 
+### Carrying on in the meantime
+
+You can still plot while you wait for a fix. Instead of homing, set your origin by
+hand:
+
+1. Jog the carriage to the **front left corner** of your paper.
+2. Press **Set Zero** in [terraForge](terraForge.md)'s jog window.
+3. Plot as normal.
+
+This gives the machine an origin without needing the switches.
+
+!!! warning "Jog carefully with a faulty switch"
+    Homing is what normally stops the carriage at the ends of its travel. Without a
+    working switch nothing does, so move in small steps as you approach the edges of
+    the bed, and do not use the 100 mm jog near the ends.
+
+    Treat this as a way to finish a job, not a permanent setup.
+
 ## The machine will not move
 
 **It is probably in an alarm state.** FluidNC halts and refuses to move when it stops
