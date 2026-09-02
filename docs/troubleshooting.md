@@ -62,10 +62,11 @@ hand:
 
 This gives the machine an origin without needing the switches.
 
-!!! warning "Jog carefully with a faulty switch"
-    Homing is what normally stops the carriage at the ends of its travel. Without a
-    working switch nothing does, so move in small steps as you approach the edges of
-    the bed, and do not use the 100 mm jog near the ends.
+!!! warning "Jog carefully"
+    Nothing stops the carriage at the ends of its travel — see
+    [there is nothing to stop you](movingThePenCarriage.md#there-is-nothing-to-stop-you).
+    Move in small steps as you approach the edges of the bed, and do not use the 100 mm
+    jog near the ends.
 
     Treat this as a way to finish a job, not a permanent setup.
 

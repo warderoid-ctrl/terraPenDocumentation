@@ -47,3 +47,42 @@ either:
 
 If `terrapen.local` does not resolve, check your router for the address it assigned,
 for example `http://192.168.1.145`.
+
+## Trade shows, schools and locked networks
+
+Managed networks — a university, an office, a school — often will not work. They
+commonly stop devices talking to each other, or put a login page in the way that the
+terraPen has no way of completing. And at a show there may be no network worth joining
+at all.
+
+You could reconfigure the terraPen for each new place, but that means digging into the
+settings every time you move it.
+
+### Use a travel router
+
+This is what we do. A small travel router such as the
+[GL.iNet GL-MT300N-V2](https://www.gl-inet.com/en-gb/products/gl-mt300n-v2) solves it
+neatly:
+
+1. Set the travel router up once, with its own network name and password.
+2. Point the terraPen at **that** network, following the steps above.
+3. Take the router with you.
+
+The terraPen now only ever sees one network, so it never needs reconfiguring. The
+router handles whatever is available at the other end — your home router, a hotel
+connection, or a phone hotspot — and your computer joins the same network and reaches
+both the plotter and the internet.
+
+### Or use a phone hotspot
+
+Connect **both** your computer and the terraPen to your phone's hotspot. You keep
+internet access on the computer while still controlling the plotter.
+
+This needs the terraPen pointing at the hotspot's network name and password, so it is
+best when the hotspot details stay the same.
+
+### Or fall back to the terraPen's own network
+
+If all else fails, the terraPen's own access point always works — join `terraPen` as
+you did during [first time setup](1sttimeuse.md). Your computer will not have internet
+while you are connected to it, but the plotter will work perfectly well.

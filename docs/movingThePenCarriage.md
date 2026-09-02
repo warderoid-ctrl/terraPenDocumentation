@@ -1,5 +1,17 @@
 # Moving the pen carriage
 
+## There is nothing to stop you
+
+!!! warning "The terraPen has no travel limits"
+    There are no soft limits and no hard limits set. The limit switches are used for
+    **homing only** — they do not stop the carriage during ordinary moves.
+
+    If you keep jogging past the end of the travel, the machine will drive into its
+    own frame and keep pushing. Nothing intervenes.
+
+Use the large steps to cross the bed, and switch to small steps as you approach the
+edges. If you are not sure where the carriage is, home it first.
+
 ## In terraForge
 
 The **jog panel** in [terraForge](terraForge.md) is the normal way to move the
