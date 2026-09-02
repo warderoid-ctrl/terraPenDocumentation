@@ -1,21 +1,44 @@
-* Uploading The terraPen uses gcode files to control machine and pen movement. 
+# Uploading files
 
-* We now have our very own plotter software! [text](https://github.com/theworkisthework/terraForge/releases/tag/v1.2.0) This makes a lot of the steps here redundent! 
+The terraPen draws from **G-code** files — plain text instructions describing where to
+move and when to raise and lower the pen.
 
-* You can use various tools to convert your work into gcode, for example there are gcode plugins for Inkscape, online gcode generators  such as Laserweb, or desktop applications like DrawingBotV3 that converts images for plotting and directly output gcode. 
+!!! tip "The easy route"
+    [terraForge](terraForge.md) generates G-code from your artwork and uploads it to
+    the machine for you. Use it unless you have a reason not to — the rest of this
+    page describes doing it by hand.
 
-* Lightburn, which while designed for laser cutters, generates very well optimized gcode that works well with terraPen. 
+## Making G-code
 
-* There are also command line tools like vpype that can output gcode. You can even output code directly from your own generative art if you wish. 
+Any tool that outputs G-code will work:
 
-* However you generate your gcode, you can upload it to your terraPen so you can plot it. 
+| Tool | Notes |
+|---|---|
+| [terraForge](terraForge.md) | **Recommended.** Built for the terraPen; SVG and PDF in, plot out. |
+| [Lightburn](LightburnProfilesAndSettings.md) | Designed for laser cutters, but produces very well optimised G-code. Profiles provided. |
+| Inkscape | Various G-code plugins available. |
+| DrawingBotV3 | Converts images into plottable line work and outputs G-code. |
+| vpype | Command line toolkit for plotter work. |
+| Laserweb | Browser-based G-code generation. |
+| Your own code | Generative work can output G-code directly. |
 
-* Navigate back to the panel titled SD Files (fig. 1, F). 
+Save files with a `.g` extension.
 
-* To upload new files, click on the “Upload” button and select the file(s) you want to upload and click “Open”. 
+## Uploading through the web interface
 
-* Your files will now start uploading to terraPen and a progress indicator will be displayed. 
+1. Go to the **SD Files** panel (F).
+2. Click **Upload**.
+3. Select your file or files and click **Open**.
 
-* Note: Uploading large files can take some time. Existing files can be deleted by clicking on the “Trashcan” icon (fig. 1, Fa). Files can be stored in folders and folders can be created by clicking the “Add folder” icon (fig. 1, F). 
+A progress indicator appears while the files transfer.
 
-* Total SD card storage space used is also shown at the bottom of the panel.
+!!! note "Large files take a while"
+    Detailed plots can be several megabytes, and the upload is not fast. Let it finish
+    before starting a job.
+
+## Managing files on the card
+
+- **Folders** — click the *add folder* icon to create one, then open it to upload
+  inside. Worth doing once you have more than a handful of plots.
+- **Deleting** — click the *trashcan* icon on a file's row.
+- **Space** — total SD card usage is shown at the bottom of the panel.

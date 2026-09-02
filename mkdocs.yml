@@ -33,7 +33,9 @@ theme:
     - content.code.copy
     - content.code.annotate
     # - content.tabs.link
-    - naviagation.sections
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
     - navigation.tracking
     # - navigation.tabs
     # - navigation.tabs.sticky
@@ -86,17 +88,24 @@ extra:
       link: https://github.com/theworkisthework
 nav:
   - Home: index.md
-  - What's in the box: WhatsInTheBox.md 
-  - First time use: 1sttimeuse.md
-  - terraPen web UI: terraPenWebUI.md 
-  - First Plot: 1stPlot.md
-  - Uploading Files: uploadingFiles.md
-  - Plotting: plotting.md
-  - Moving The Pen Carriage: movingThePenCarriage.md
-  - Starting a plot: startingAplot.md
-  - Connect to a personal network: connectToPersonalNetwork.md
-  - Re-starting terraPen: restartTerraPen.md 
-  - Lightburn Profiles and settings: LightburnProfilesAndSettings.md
-  - Connect to terraPen via USB-C: ConnectTethered.md
-  - YAML Configuration Settings: YAMLConfigurationSettings.md
-  - FAQ (Frequently Asked Questions): FAQ.md
+  - Getting started:
+      - What's in the box: WhatsInTheBox.md
+      - First time setup: 1sttimeuse.md
+      - The web interface: terraPenWebUI.md
+  - Your first plot:
+      - Your first plot: 1stPlot.md
+      - Moving the pen carriage: movingThePenCarriage.md
+      - Plotting area and paper: plotting.md
+      - Starting a plot: startingAplot.md
+  - Making artwork:
+      - terraForge: terraForge.md
+      - Uploading files: uploadingFiles.md
+      - Lightburn profiles and settings: LightburnProfilesAndSettings.md
+  - Connecting:
+      - Connect to your own Wi-Fi: connectToPersonalNetwork.md
+      - Connect via USB-C: ConnectTethered.md
+      - Restarting the terraPen: restartTerraPen.md
+  - Help:
+      - Troubleshooting: troubleshooting.md
+      - FAQ: FAQ.md
+      - YAML configuration settings: YAMLConfigurationSettings.md

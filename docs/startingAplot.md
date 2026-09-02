@@ -1,7 +1,33 @@
-* To start a plot, locate the gcode (.g) file in the “SD Files” panel and click the “Play” button (fig. 1, Fa). 
-* The plot should start after a short pause (10 seconds). 
-* You can pause and resume the plot from the “GRBL” panel (fig. 1, E) where a progress bar, “Pause” and “Cancel” buttons should appear. 
-* Note: essential to have zeroed all axis before plotting (fig. 3, C)! 
-* Note: After cancelling a plot, the UI will display an alarm. 
-* Click the “Alarm” button at the left of the message to clear the alarm. 
-* You will not be able to move the machine or start a new plot until it is cleared.
+# Starting, pausing and cancelling a plot
+
+## Starting
+
+1. Find your `.g` file in the **SD Files** panel (F).
+2. Press the **play** icon on that row.
+3. The plot begins after a pause of about ten seconds.
+
+!!! warning "Zero the machine first"
+    Always set your origin before plotting — see
+    [Your first plot](1stPlot.md#3-home-the-machine). Starting a job from the wrong
+    position is the most common way to spoil a sheet.
+
+## While it runs
+
+The **Job progress** panel (E) shows a progress bar with **Pause** and **Cancel**
+buttons.
+
+Pausing stops the carriage where it is. The pen lifts, so it will not bleed into the
+paper while you wait.
+
+## After cancelling
+
+Cancelling a plot puts the machine into an **alarm** state. This is normal and is the
+firmware protecting itself, because it no longer trusts its position.
+
+To clear it, click the **Alarm** button at the left of the message, or send `$X` in
+the serial console.
+
+!!! note "Nothing works until the alarm is cleared"
+    While the alarm is active you cannot jog the machine or start another plot.
+
+After clearing an alarm, re-establish your origin before plotting again.

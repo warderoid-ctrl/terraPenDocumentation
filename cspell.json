@@ -21,7 +21,25 @@
         "Inkscape",
         "Laserweb",
         "vpype",
-        "Trashcan"
+        "Trashcan",
+        "terraPen",
+        "terrapen",
+        "terraForge",
+        "FluidNC",
+        "fluidnc",
+        "toolhead",
+        "toolheads",
+        "toolpath",
+        "toolpaths",
+        "feedrate",
+        "Feedrate",
+        "plottable",
+        "reflows",
+        "solenoid",
+        "mDNS",
+        "lbprefs",
+        "DrawingBotV",
+        "tforge"
     ],
     // flagWords - list of words to be always considered incorrect
     // This is useful for offensive words and common spelling errors.

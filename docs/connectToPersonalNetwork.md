@@ -1,15 +1,45 @@
-- Use this feature to add the terraPen on your personal network, allowing you to browse the web whilst simultaneously controlling and monitoring the terraPen plotter.
-- After connecting to the “TerraPen” access point and loading the UI click on the menu button (fig. 1, G) and then “Setup”.
-- This will start the setup wizard.
-- Click on “Start setup” Click “Continue” You will see the current WiFi configuration.
-- This is the default Access Point mode , network name “TerraPen” and password which you can change if required.
-- Role - To connect to your WiFi network, change the role from Access Point to WiFi Client and click the “Set” button, changing the colour should change to green.
-- SSID - Next enter the SSID or network name of your WiFi network and click “Set”.
-- Password - Enter the password for your WiFi network and click “Set”.
-- Click “Continue” Click “Close” to finish Click “Yes” to restart the controller.
-- The controller will then attempt to connect to your WiFI network.
-- In a browser go to http://terrapen. local to connect to the UI or connect using its IP address to connect.
-- Check your router for the assigned address (e.g. http://192.168.1.145).
+# Connect to your own Wi-Fi network
 
-!!!Note
-    If you make a mistake, the controller will fall back to AP mode after attempting to connect to your network after a minute so you can come back here after reconnecting and make any required changes.
+By default the terraPen runs as an access point — you connect to *it*, which means
+your device drops off the internet while you plot.
+
+Putting the terraPen on your own network instead lets you browse the web and control
+the plotter at the same time.
+
+## Run the setup wizard
+
+1. Connect to the `terraPen` access point and open the interface as usual.
+2. Click the **menu** button (H), then **Setup**.
+3. Click **Start setup**, then **Continue**.
+
+You now see the current Wi-Fi configuration — access point mode, network name
+`terraPen`, and its password. You can change these here if you want to.
+
+To join your own network, set each field in turn and click **Set** after each one.
+The field turns green when it is accepted.
+
+| Field | Set it to |
+|---|---|
+| **Role** | Change from *Access Point* to *WiFi Client* |
+| **SSID** | Your network's name |
+| **Password** | Your network's password |
+
+![Setting the network SSID](img/Settings SSID.png)
+
+![Setting the network password](img/Settings SSID Password.png)
+
+Then click **Continue**, **Close**, and **Yes** to restart the controller.
+
+## Find it on your network
+
+After restarting, the terraPen joins your Wi-Fi. Reach it at:
+
+- [http://terrapen.local](http://terrapen.local), or
+- its IP address, for example `http://192.168.1.145`
+
+If `terrapen.local` does not resolve, check your router's list of connected devices
+to find the address it was given.
+
+!!! note "A wrong password is not a disaster"
+    If the details are wrong, the controller gives up after about a minute and falls
+    back to access point mode. Reconnect to the `terraPen` network and correct them.
