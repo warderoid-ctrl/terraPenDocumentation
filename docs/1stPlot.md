@@ -1,3 +1,8 @@
+---
+search:
+  boost: 2
+---
+
 # Your first plot
 
 This walks you through plotting one of the files already on the SD card. Do this

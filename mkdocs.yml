@@ -42,6 +42,7 @@ theme:
     # - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - toc.follow
 use_directory_urls: true
 plugins:
@@ -51,6 +52,9 @@ plugins:
   - minify:
       minify_html: true
   - search:
+      # Split on punctuation and at camelCase boundaries, so a search for
+      # "forge" finds terraForge and "plot" finds 1stPlot.
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       pipeline:
         - stemmer
         - stopWordFilter

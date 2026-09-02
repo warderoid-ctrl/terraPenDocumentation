@@ -1,3 +1,8 @@
+---
+search:
+  boost: 3
+---
+
 # Troubleshooting
 
 !!! tip "Try this first"

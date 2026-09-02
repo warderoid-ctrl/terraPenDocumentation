@@ -1,3 +1,8 @@
+---
+search:
+  boost: 2
+---
+
 # Frequently asked questions
 
 The terraPen is developed continuously, and its workflow differs from other plotters
