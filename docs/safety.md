@@ -42,7 +42,12 @@ This matters in two everyday situations:
 
 If you see the machine driving into its own frame,
 [power it down immediately](troubleshooting.md#the-machine-is-crashing-into-itself)
-at the rear right switch.
+at the rear right switch. That always works, whatever software you are running.
+
+!!! note "Emergency stop in terraForge"
+    An emergency stop during homing is being added to
+    [terraForge](terraForge.md). Once your version has it, it is the quicker way to
+    halt the machine — but the power switch remains the thing that always works.
 
 ## Power
 
@@ -57,7 +62,9 @@ at the rear right switch.
 - **Keep children away from a running machine.** There are pinch points, small parts
   and pens within easy reach.
 - At a workshop, school or show, put the machine where people cannot lean over it
-  while it is plotting.
+  while it is plotting. A plotter draws a crowd — people naturally lean in to watch —
+  and **loose clothing, lanyards, scarves, long hair and sleeves** are exactly what
+  the carriage will catch as it crosses the bed.
 
 ## The pens
 

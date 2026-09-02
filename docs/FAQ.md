@@ -80,9 +80,18 @@ terraForge pen settings.
 No. Current machines use a stepper toolhead. Existing solenoid machines are still
 supported — see [Solenoid pen lift](solenoid.md).
 
+## Can it cut vinyl?
+
+Yes — fit a drag knife instead of a pen and use terraForge's cutting mode. See
+[cutting vinyl](vinyl.md). The feature is experimental, so test on offcuts first.
+
 ## What pens can I use?
 
 Most pens fit. Pen height matters far more than pen brand.
+
+You are not limited to pens either — a **paintbrush** works, though it needs the full
+Z travel rather than the usual 5 mm of lift. See
+[why 5 mm, and when you need more](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
 ## Why does it go into alarm when I abort a plot?
 

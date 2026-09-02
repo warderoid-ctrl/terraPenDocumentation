@@ -71,9 +71,21 @@ That gives you a pen that draws at Z0 and lifts 5 mm clear.
     pulling the pen down as it crosses any dips. A nib set exactly level will skip on
     the low spots.
 
-!!! note "Why 5 mm of lift?"
-    Paper warps as ink goes onto it. 5 mm of clearance means the pen still passes
-    over raised areas later in a long plot without dragging.
+!!! note "Why 5 mm, and when you need more"
+    Paper warps as ink goes onto it, so the sheet you started on is not the sheet you
+    finish on. 5 mm of clearance means the pen still passes over raised areas later in
+    a long plot without dragging, and it is the right answer about 95% of the time.
+
+    Go higher when the job asks for it:
+
+    | Lift | When |
+    |---|---|
+    | **5 mm** | Most plots, most pens |
+    | **10 mm** | Heavily warping paper, or a bulkier tool |
+    | **Full travel** | A paintbrush, which needs all the clearance there is |
+
+    More lift is not simply better — every pen-up move takes a little longer — which is
+    why 5 mm rather than always using the maximum.
 
 ## 4. Run the plot
 

@@ -16,6 +16,9 @@ search:
     Switch the terraPen off at the **rear right**. Do not wait to see whether it stops
     on its own, and do not try to fix it while it is still moving.
 
+    An emergency stop during homing is being added to [terraForge](terraForge.md); if
+    your version has it, use it. The power switch works regardless.
+
 There are two common causes. Neither is caught by the machine, because there are no
 soft or hard limits — see
 [there is nothing to stop you](movingThePenCarriage.md#there-is-nothing-to-stop-you).

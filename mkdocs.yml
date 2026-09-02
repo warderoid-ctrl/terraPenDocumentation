@@ -112,6 +112,7 @@ nav:
       - terraForge: terraForge.md
       - Uploading files: uploadingFiles.md
       - Lightburn profiles and settings: LightburnProfilesAndSettings.md
+      - Cutting vinyl: vinyl.md
   - Older machines:
       - Solenoid pen lift: solenoid.md
   - Connecting:
