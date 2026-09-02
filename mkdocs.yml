@@ -116,3 +116,4 @@ nav:
       - Troubleshooting: troubleshooting.md
       - FAQ: FAQ.md
       - YAML configuration settings: YAMLConfigurationSettings.md
+      - Hardware and source files: hardware.md

@@ -56,7 +56,13 @@ That light means the switch is powered and working. **Test both switches.**
 The problem is nearly always the wiring rather than the switch itself.
 
 1. Carefully reseat the wires and watch for the green light as you do.
-2. Check **both ends** of the run — at the switch, and at the motherboard.
+2. Check **both ends** of the run — at the switch, and at the controller board.
+
+On the board, the limit switches land on **J5 for X** and **J19 for Y**:
+
+![Controller board pinout, showing the X and Y limit switch connectors](img/controller-pinmap.png)
+
+The full pinout is in [hardware and source files](hardware.md).
 
 !!! warning "Do not home the machine until both switches light"
     Homing drives the carriage at the ends of travel on purpose. Until both switches
