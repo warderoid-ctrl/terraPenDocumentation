@@ -1,11 +1,11 @@
 # Lightburn profiles and settings
 
 Lightburn is designed for laser cutters, but it generates well-optimised G-code that
-suits the terraPen.
+works on the terraPen.
 
-!!! note "Consider terraForge instead"
+!!! note "An alternative, not the recommended route"
     [terraForge](terraForge.md) is built for this machine and needs none of the setup
-    below. These instructions remain for people who already work in Lightburn.
+    below. These instructions are here for people already working in Lightburn.
 
 ## Download a profile
 

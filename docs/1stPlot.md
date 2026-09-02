@@ -20,14 +20,22 @@ get it as flat as you can. A ripple in the paper becomes a wobble in the drawing
 **Start every session by homing.** The terraPen ships with limit switches, so it can
 find its own position.
 
-Clear the bed, then run the homing cycle — the **Home** button in
-[terraForge](terraForge.md)'s jog panel, or `$H` in the console. The carriage moves
-until it finds its switches and sets its origin from them.
+Clear the bed, then run the homing cycle. Any of these does it:
 
-!!! note "You can still set your own zero"
-    Homing establishes the machine's origin. If you want a job to start somewhere
-    else, home first and then set your own zero with the zero button in terraForge or
-    the web interface.
+- **Home** in [terraForge](terraForge.md)'s jog panel
+- **Home** in the web interface
+- `$H` in the console
+
+The carriage moves until it finds its switches and sets its origin from them.
+
+!!! note "Homing covers X and Y, not Z"
+    There is no limit switch on the Z axis, so homing cannot find it. You set Z
+    yourself in the next step, against the paper you are actually using.
+
+!!! tip "You can still set your own zero"
+    Homing establishes the machine's origin. If a job needs to start somewhere else,
+    home first, then set your own zero with the zero button in terraForge or the web
+    interface.
 
 ## 3. Fit the pen and set its height
 
