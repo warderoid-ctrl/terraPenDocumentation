@@ -44,6 +44,13 @@ you have already walked away, leave it to finish.
 Yes. Select USB in terraForge's machine settings — file upload works over the cable
 too. See [Connect via USB-C](ConnectTethered.md).
 
+## What do I do if the machine crashes into itself?
+
+**Power it down immediately** using the switch at the rear right. It means a limit
+switch was not seen. See
+[the machine is crashing into itself](troubleshooting.md#the-machine-is-crashing-into-itself)
+for how to recover and check the switches.
+
 ## Should I home the machine every time?
 
 Yes. The terraPen has limit switches, so homing is the reliable way to establish

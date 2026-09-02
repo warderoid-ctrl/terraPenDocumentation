@@ -5,6 +5,47 @@
     right, wait a few seconds, and switch it back on — see
     [Restarting](restartTerraPen.md). Home the machine afterwards.
 
+## The machine is crashing into itself
+
+This means a **limit switch has not been seen** — the machine keeps driving because
+nothing told it that it had reached the end.
+
+!!! danger "Power it down straight away"
+    Switch the terraPen off at the **rear right**. Do not wait to see whether it stops
+    on its own, and do not try to fix it while it is still moving.
+
+### Getting it moving again
+
+1. With the power **off**, move the toolhead by hand about **50 mm in both X and Y**,
+   away from the ends of its travel.
+2. Switch the machine back on.
+3. Jog it gently and check it moves normally.
+
+### Check both switches
+
+The limit switches are **optical** — the machine sees the switch when something breaks
+the beam.
+
+1. Slide a piece of **paper** into the switch slot.
+2. A **green light** should come on.
+
+That light means the switch is powered and working. **Test both switches.**
+
+### If a switch does not light up
+
+The problem is nearly always the wiring rather than the switch itself.
+
+1. Carefully reseat the wires and watch for the green light as you do.
+2. Check **both ends** of the run — at the switch, and at the motherboard.
+
+!!! warning "Do not home the machine until both switches light"
+    Homing drives the carriage at the ends of travel on purpose. Until both switches
+    respond, homing will crash it again.
+
+If you still cannot get a green light, get in touch on
+[Discord](https://discord.gg/fEXrmUm5nR) — it may need a replacement cable, and we
+would rather send you one than have you keep testing.
+
 ## The machine will not move
 
 **It is probably in an alarm state.** FluidNC halts and refuses to move when it stops
