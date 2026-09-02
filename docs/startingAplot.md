@@ -11,6 +11,38 @@ Progress appears in the job panel, counting through the G-code line by line:
 
 ![A job running in terraForge](img/terraforge-job-running.png)
 
+## Decide whether you are staying
+
+Make this choice **before you press Start**, because it decides whether pausing is
+available to you.
+
+Once a plot is running it is driven from the terraPen's SD card, so the machine does
+not need your computer at all. You can close terraForge, shut the laptop, and walk
+away — the plot carries on to the end.
+
+!!! danger "Do not reconnect to check on a running plot"
+    Reconnecting to a plot already in progress — from either terraForge or the
+    [web UI](terraPenWebUI.md) — can overload FluidNC's websocket handling, stall the
+    controller and **end the plot part-drawn**. You lose the sheet.
+
+    This is a limitation in the firmware, not something you have done wrong.
+
+So there are two sensible ways to run a plot:
+
+| | |
+|---|---|
+| **Stay connected** | Leave terraForge open and connected for the whole plot. You keep progress and the ability to [pause](#stopping-a-plot-pause-first). |
+| **Walk away** | Disconnect and leave it to finish. Do not come back and reconnect mid-plot to see how it is doing. |
+
+The one to avoid is the middle: disconnecting, then reconnecting later out of
+curiosity. If you think you might want to pause, stay connected from the start.
+
+!!! note "This is getting better"
+    It has not been seen for a long time, and we follow FluidNC's development closely
+    as it improves. The habit is still worth keeping, because when it does happen you
+    lose the plot. If you hit it, please say so on
+    [Discord](https://discord.gg/fEXrmUm5nR).
+
 ## Stopping a plot: pause first
 
 !!! warning "Always pause before you abort"

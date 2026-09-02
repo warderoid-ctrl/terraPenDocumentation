@@ -76,7 +76,12 @@ After a short pause, the terraPen starts drawing.
 
 !!! success "That's it"
     The artwork lives on the terraPen's SD card, so nothing needs to stay connected.
-    You can close the browser, or unplug your laptop, and the plot carries on.
+    You can close terraForge, or shut your laptop, and the plot carries on.
+
+!!! warning "But do not reconnect mid-plot"
+    If you disconnect, leave it alone until the plot finishes. Reconnecting to a
+    running plot can stall the controller and end the plot part-drawn — see
+    [deciding whether you are staying](startingAplot.md#decide-whether-you-are-staying).
 
 ## Next steps
 

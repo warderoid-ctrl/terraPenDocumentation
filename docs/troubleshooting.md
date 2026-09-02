@@ -54,6 +54,20 @@ any dips. See [setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-heig
 
 Also check the pen is tight in the holder and the paper is flat and well secured.
 
+## The plot stopped when I reconnected to check on it
+
+Reconnecting to a plot already in progress can overload FluidNC's websocket handling
+and stall the controller, ending the plot part-drawn. It is a firmware limitation
+rather than anything you did wrong.
+
+Power cycle the machine, home it, and start again. To avoid it next time: if you
+disconnect, leave the machine alone until the plot finishes, and if you might want to
+pause, stay connected from the start — see
+[deciding whether you are staying](startingAplot.md#decide-whether-you-are-staying).
+
+Please report it on [Discord](https://discord.gg/fEXrmUm5nR) if you hit it; we track
+FluidNC's development and it helps to know it is still happening.
+
 ## The plot started in the wrong place
 
 The origin was not where you thought. Home the machine, set your zero again if the job

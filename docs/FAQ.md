@@ -29,6 +29,16 @@ A full A2 sheet — 594 × 420 mm.
 No. Artwork is stored on the terraPen's SD card, so once a plot starts you can close
 terraForge or take your laptop away.
 
+**But if you disconnect, do not reconnect until the plot has finished.** Reconnecting
+part way through can stall the controller and end the plot. If you think you might
+want to pause, stay connected from the start — see
+[deciding whether you are staying](startingAplot.md#decide-whether-you-are-staying).
+
+## Can I check on a plot from another room?
+
+Only if you stayed connected. Reconnecting to a running plot risks ending it, so if
+you have already walked away, leave it to finish.
+
 ## Can I use USB instead of Wi-Fi?
 
 Yes. Select USB in terraForge's machine settings — file upload works over the cable
