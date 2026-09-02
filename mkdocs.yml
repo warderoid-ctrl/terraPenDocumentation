@@ -51,11 +51,6 @@ plugins:
   - privacy
   - minify:
       minify_html: true
-  # Produces a single downloadable PDF of the whole guide at pdf/terraPen-guide.pdf
-  - pdf-export:
-      combined: true
-      combined_output_path: pdf/terraPen-guide.pdf
-      verbose: false
   - search:
       # Split on punctuation and at camelCase boundaries, so a search for
       # "forge" finds terraForge and "plot" finds 1stPlot.
