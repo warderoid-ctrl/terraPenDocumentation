@@ -18,6 +18,10 @@ guide takes you from unboxing to your first finished drawing.
 5. **Home the machine**, fit paper, and set your pen height.
 6. **Plot.**
 
+!!! warning "Before your first plot"
+    The terraPen is an open-frame machine with no travel limits — please read
+    [Safety](safety.md) once before you start.
+
 ## What you will need
 
 - A computer with Wi-Fi and a web browser
@@ -25,11 +29,20 @@ guide takes you from unboxing to your first finished drawing.
 - Paper, up to A2 (594 × 420 mm)
 - A pen — one is included
 
+## Prefer a PDF?
+
+The whole guide is available as a single document:
+<strong><a href="pdf/terraPen-guide.pdf">download the terraPen guide (PDF)</a></strong>.
+
+The website is always the current version — the PDF is generated from it each time
+the site is published.
+
 ## Getting help
 
 - Website — [terrapen.xyz](https://www.terrapen.xyz)
 - Discord — [join the community](https://discord.gg/fEXrmUm5nR) for help, feedback and to share plots
 - Something wrong? — [Troubleshooting](troubleshooting.md)
+- Need a hand? — [Getting support](support.md)
 
 ---
 

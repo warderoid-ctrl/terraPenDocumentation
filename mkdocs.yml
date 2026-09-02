@@ -51,6 +51,11 @@ plugins:
   - privacy
   - minify:
       minify_html: true
+  # Produces a single downloadable PDF of the whole guide at pdf/terraPen-guide.pdf
+  - pdf-export:
+      combined: true
+      combined_output_path: pdf/terraPen-guide.pdf
+      verbose: false
   - search:
       # Split on punctuation and at camelCase boundaries, so a search for
       # "forge" finds terraForge and "plot" finds 1stPlot.
@@ -93,6 +98,7 @@ extra:
 nav:
   - Home: index.md
   - Getting started:
+      - Safety: safety.md
       - What's in the box: WhatsInTheBox.md
       - Fitting the toolhead: assembly.md
       - First time setup: 1sttimeuse.md
@@ -112,8 +118,13 @@ nav:
       - Connect to your own Wi-Fi: connectToPersonalNetwork.md
       - Connect via USB-C: ConnectTethered.md
       - Restarting the terraPen: restartTerraPen.md
+  - Looking after it:
+      - Maintenance: maintenance.md
+      - Transport and storage: transport.md
   - Help:
       - Troubleshooting: troubleshooting.md
+      - Getting support: support.md
       - FAQ: FAQ.md
+      - Specifications: specifications.md
       - YAML configuration settings: YAMLConfigurationSettings.md
       - Hardware and source files: hardware.md
