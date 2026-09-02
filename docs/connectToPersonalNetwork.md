@@ -6,6 +6,10 @@ your computer drops off the internet while you plot.
 Putting the terraPen on your own network fixes that, and is how you will normally use
 it.
 
+There is a more practical reason too: **file uploads are much more reliable over your
+own network.** Over the access point, a large plot can fail to transfer at all — see
+[uploading files](uploadingFiles.md).
+
 ## 1. Enter your network details
 
 Connect to the `terraPen` access point and open the web UI, then set your network

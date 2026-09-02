@@ -43,9 +43,20 @@ it into the file browser and send it to the machine.
 
 A progress indicator appears while the files transfer.
 
-!!! note "Large files take a while"
-    Detailed plots can be several megabytes, and the upload is not fast. Let it finish
-    before starting a job.
+!!! warning "Upload over your own network, not the access point"
+    Detailed plots run to several megabytes and uploads are not always fast. Over the
+    terraPen's own access point a large file can **fail outright** rather than merely
+    crawl.
+
+    Put the plotter on [your own Wi-Fi](connectToPersonalNetwork.md) before sending
+    anything substantial.
+
+!!! tip "Check the file actually arrived"
+    A part-uploaded file looks like a file. Compare the size on your computer with the
+    size shown in terraForge's file browser — if they do not match, the upload did not
+    finish, and plotting it will stop part way through the drawing.
+
+Let an upload finish before starting a job.
 
 ### Managing files on the card
 

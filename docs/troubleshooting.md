@@ -190,10 +190,21 @@ sheet — reset it with the nib on the paper you are actually using. If the mach
 behaves as though it has the wrong toolhead, check its
 [configuration](YAMLConfigurationSettings.md).
 
-## Uploads take forever
+## Uploads are slow, or fail
 
-Large plots are big files and the transfer is slow. Let it finish rather than
-restarting it.
+Large plots are big files, and uploads are not always fast.
+
+Over the terraPen's **own access point**, a large file can fail entirely rather than
+just crawl. Put the machine on [your own network](connectToPersonalNetwork.md) before
+sending anything substantial — it is the single biggest improvement you can make here.
+
+## A plot stops part way through, in the middle of the drawing
+
+Suspect an incomplete upload. A file that only half arrived still appears in the file
+browser and still starts plotting.
+
+Compare the file size on your computer with the size shown in terraForge's file
+browser. If they differ, delete it, get onto your own network, and upload again.
 
 ## Still stuck?
 
