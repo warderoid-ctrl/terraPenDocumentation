@@ -3,7 +3,7 @@ site_description: >-
   Documentation for the open source terraPen plotter
 docs_dir: docs
 site_dir: public
-site_url: http://localhost:8000
+site_url: !ENV [SITE_URL, 'http://localhost:8000']
 theme: 
   name: material
   logo: img/TP-Logo-web-ad.svg
