@@ -2,36 +2,40 @@
 
 ![The terraPen A2 pen plotter](img/Photo-TerraPen.png)
 
-Welcome. The terraPen is an open-source pen plotter with an A2 drawing area. This
+Welcome. The terraPen is an open-source pen plotter with a full A2 drawing area. This
 guide takes you from unboxing to your first finished drawing.
 
 !!! tip "New here? Start at the top."
-    The pages in the sidebar are in order. If you have just taken your terraPen out
-    of the box, work through **Getting started** and **Your first plot** in sequence
-    — it takes about twenty minutes.
+    The pages in the sidebar are in order. If you have just taken your terraPen out of
+    the box, work through **Getting started** and **Your first plot** in sequence.
 
 ## The short version
 
-1. **Power on.** Plug it in; the machine starts automatically.
-2. **Connect.** Join the `terraPen` Wi-Fi network and open the web interface.
-3. **Set up the paper and pen.** Fit the paper, set the pen height.
-4. **Home the machine** so it knows where it is.
-5. **Plot** one of the pre-loaded files from the SD card.
-
-Once you have plotted a supplied file, move on to
-[making your own artwork](terraForge.md).
+1. **Fit the toolhead.** It ships unattached — four screws and the supplied hex key.
+2. **Power on.** Plug it in; the machine starts automatically.
+3. **Connect.** Join the `terraPen` Wi-Fi network, then move the plotter onto your own network.
+4. **Install terraForge**, our desktop app for driving the machine.
+5. **Home the machine**, fit paper, and set your pen height.
+6. **Plot.**
 
 ## What you will need
 
-- A phone, tablet or computer with a web browser and Wi-Fi
+- A computer with Wi-Fi and a web browser
 - A mains socket
-- Paper, up to A2
-- A pen (one is included)
+- Paper, up to A2 (594 × 420 mm)
+- A pen — one is included
 
 ## Getting help
 
 - Website — [terrapen.xyz](https://www.terrapen.xyz)
-- Discord — [join the community](https://discord.gg/fEXrmUm5nR) for help and to share plots
-- Something wrong? Try [Troubleshooting](troubleshooting.md) first.
+- Discord — [join the community](https://discord.gg/fEXrmUm5nR) for help, feedback and to share plots
+- Something wrong? — [Troubleshooting](troubleshooting.md)
 
-These pages are a work in progress. Corrections and suggestions are very welcome.
+---
+
+!!! note "Which versions this guide describes"
+    FluidNC **4.02** · terraForge **1.4.0-rc7**
+
+    terraForge is under active development — always install the latest release
+    candidate. If something here does not match what you see on screen, say so on
+    Discord.

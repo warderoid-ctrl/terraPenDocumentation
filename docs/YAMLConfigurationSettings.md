@@ -4,14 +4,18 @@ The terraPen runs [FluidNC](https://github.com/bdring/FluidNC). FluidNC is confi
 by a `.yaml` file describing the machine — its motors, its toolhead, its limits and
 its homing behaviour.
 
-**Your terraPen arrives already configured**, with every supported YAML file loaded
-and the correct one selected for your toolhead. You do not need to touch this to
-plot.
+**Your terraPen arrives already configured** for its stepper toolhead. You do not need
+to touch any of this to plot.
 
 ## When you might change it
 
 - You have swapped toolheads — each toolhead needs its matching YAML file.
 - You want to adjust settings such as **acceleration** or **feedrate**.
+
+!!! note "Travel values are not the working area"
+    The `max_travel_mm` figures in these files do not define how much of the bed you
+    can use — soft limits are disabled, and the real drawing area is
+    [A2, 594 × 420 mm](plotting.md).
 
 Configuration files live in our
 [fluidnc-config-files repository](https://github.com/theworkisthework/fluidnc-config-files).

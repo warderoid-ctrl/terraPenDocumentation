@@ -2,6 +2,8 @@
 
 This page gets your terraPen powered up and connected. Allow about five minutes.
 
+Fit the [stepper toolhead](assembly.md) first if you have not already.
+
 ## 1. Connect the power
 
 The power socket is on the controller, **underneath the base board**. Lift the front
@@ -14,47 +16,46 @@ Connect the supplied 12 V adaptor and plug it into the wall.
     the wall or unplug it. A switched extension lead or a smart plug makes this much
     easier day to day.
 
-When it powers on you may hear the toolhead move and the solenoid click. This is
-normal.
-
 ## 2. Connect to the terraPen's Wi-Fi
 
-Out of the box the terraPen creates its own Wi-Fi network — it does not join yours yet.
+Out of the box the terraPen creates its own access point — it does not join your
+network yet.
 
-On your phone or computer, open the Wi-Fi settings and look for a network called:
+On your computer, open the Wi-Fi settings and look for:
 
 - **Network name:** `terraPen`
 - **Password:** `12345678`
 
-Join it. Your device will warn you that this network has no internet access — that is
-expected, because you are connecting straight to the machine.
+Join it. Your device will warn you that this network has no internet access, which is
+expected — you are connecting straight to the machine.
 
-## 3. Open the web interface
+## 3. Open the interface
 
-What happens next depends on your device:
+What happens next depends on your computer:
 
-- **Windows** — a browser window usually opens by itself.
-- **macOS and iOS** — a captive portal panel appears. This works, but it is a cut-down
-  browser and some controls behave oddly.
+- **Windows** — a browser page opens by itself, showing the built-in interface.
+- **macOS** — a captive portal window opens. **Close it** and use a normal browser
+  instead; the portal is a cut-down browser and some controls misbehave in it.
 
-For full control, open a normal browser window and go to either:
+Either way, you can reach the interface directly at:
 
-- [http://terrapen.local](http://terrapen.local)
 - [http://192.168.0.1](http://192.168.0.1)
+- [http://terrapen.local](http://terrapen.local)
 
-!!! tip "Bookmark whichever one works"
-    `terrapen.local` is friendlier, but it relies on mDNS, which some Windows machines
-    and some networks do not support. If it does not load, use the IP address.
+!!! tip "If terrapen.local does not load"
+    It relies on mDNS, which some networks and computers do not support. Use the IP
+    address instead.
 
-You should now see the terraPen dashboard. From here you can move the pen carriage and
-set the machine's zero position.
+## 4. Put the terraPen on your own network
 
-!!! note "The layout moves around"
-    The interface rearranges itself to fit your screen, so panels may not be where the
-    screenshots show them on a phone. The panel names stay the same.
+Working over the access point means your computer has no internet while you plot, so
+the next step is to move the terraPen onto your own Wi-Fi.
+
+Follow [Connect to your own Wi-Fi network](connectToPersonalNetwork.md), then come
+back here.
 
 ## Next steps
 
-- Learn your way around — [The terraPen web interface](terraPenWebUI.md)
-- Get plotting — [Your first plot](1stPlot.md)
-- Prefer the terraPen on your own Wi-Fi? — [Connect to a personal network](connectToPersonalNetwork.md)
+- Install [terraForge](terraForge.md) — the recommended way to drive the machine
+- Learn the [web interface](terraPenWebUI.md)
+- Make something — [Your first plot](1stPlot.md)

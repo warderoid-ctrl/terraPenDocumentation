@@ -1,38 +1,47 @@
 # Connect via USB-C
 
-You can drive the terraPen from a computer over USB-C instead of over Wi-Fi, using
-software such as Lightburn.
+The terraPen can be driven over USB-C instead of Wi-Fi.
 
-!!! tip "terraForge supports USB too"
-    [terraForge](terraForge.md) connects over USB serial as well as Wi-Fi, and is
-    better behaved than Lightburn for pen work. Consider it first.
+## With terraForge
 
-## Steps
+USB works well with [terraForge](terraForge.md), including uploading files to the
+machine.
 
 1. Plug the terraPen into a wall outlet as normal.
 2. Connect a USB-C cable between the terraPen and your computer.
-3. Find which COM port it appeared on. On Windows, check Device Manager:
+3. In terraForge, open **machine settings** and select **USB** rather than Wi-Fi.
+4. Connect.
+
+That is all that is required — jogging, homing, pen control, file upload and plotting
+all work over the cable.
+
+!!! tip "Useful when Wi-Fi is awkward"
+    A cabled connection avoids network problems entirely, which can be worth it in a
+    busy studio or a space with poor Wi-Fi.
+
+## With Lightburn
+
+You can also connect Lightburn over USB, though [terraForge](terraForge.md) is the
+better tool for pen work.
+
+1. Find which COM port the terraPen appeared on. On Windows, check Device Manager:
 
     ![Finding the COM port in Device Manager](img/DeviceManagerCOMPort.png)
 
-4. Connect to that port in Lightburn:
+2. Connect to that port in Lightburn:
 
     ![Lightburn connected over USB](img/LightburnConnectedTethered.png)
 
-5. Check the serial console for the connection status:
+3. Check the console for connection status:
 
     ![Lightburn console showing a locked machine](img/LightburnConsoleLocked.png)
 
-6. If the machine reports an **alarm** state, send `$X` to clear it:
+4. If the machine reports an **alarm**, send `$X` to clear it:
 
     ![Clearing the alarm with $X](img/AlarmOff$X.png)
 
-## Known limitations
+See [Lightburn profiles and settings](LightburnProfilesAndSettings.md) for the
+profiles and settings to use.
 
-!!! warning "Tethered control is not fully working"
-    Over USB, the **move commands drive the axes incorrectly**, and **pen up / pen
-    down does not work correctly**. Use Wi-Fi, or plot from the SD card, for reliable
-    results.
-
-For background on connecting Lightburn to FluidNC, see the
+For background on Lightburn with FluidNC, see the
 [FluidNC Lightburn documentation](http://wiki.fluidnc.com/en/support/senders/lightburn).

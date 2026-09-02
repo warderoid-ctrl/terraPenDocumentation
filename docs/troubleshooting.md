@@ -10,7 +10,8 @@
 trusting its position — most often after a cancelled plot.
 
 Clear it with the **Alarm** button in the interface, or by sending `$X` in the serial
-console. Then set your origin again before plotting.
+console. Then [home the machine](1stPlot.md#2-home-the-machine) again before
+plotting.
 
 ## I cannot reach terrapen.local
 
@@ -36,22 +37,25 @@ settings.
 ## Lines are broken, faint or torn
 
 This is nearly always **pen height**. Too high and the nib skips; too low and it drags
-or tears. Adjust and test on scrap — see
-[Your first plot](1stPlot.md#2-fit-the-pen-and-set-its-height).
+or tears.
 
-Also check the pen is tight in the holder and the paper is flat.
+Because neither the bed nor the paper is perfectly flat, set Z zero fractionally
+*into* the paper rather than exactly level — the spring then keeps the nib down across
+any dips. See [setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height).
+
+Also check the pen is tight in the holder and the paper is flat and well secured.
 
 ## The plot started in the wrong place
 
-The origin was not where you thought. Re-home or re-zero, confirm the readout shows
-X0, Y0 before you press play, and check that your G-code was exported with an absolute
-origin.
+The origin was not where you thought. Home the machine, set your zero again if the job
+needs one, and check that your G-code was exported with an absolute origin.
 
 ## The pen crashes into the bed
 
-Stop and cut power. This usually means the machine is running the **wrong
-configuration for its toolhead** — see
-[YAML configuration settings](YAMLConfigurationSettings.md).
+Stop and cut power. Most often Z zero is set too low, or was set against a different
+sheet — reset it with the nib on the paper you are actually using. If the machine
+behaves as though it has the wrong toolhead, check its
+[configuration](YAMLConfigurationSettings.md).
 
 ## Uploads take forever
 

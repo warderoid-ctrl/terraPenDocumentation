@@ -1,16 +1,24 @@
 # Moving the pen carriage
 
-There are two ways to move the carriage.
+## In terraForge
+
+The **jog panel** in [terraForge](terraForge.md) is the normal way to move the
+machine. It holds the controls you need most:
+
+- Directional jogging in X and Y
+- **Pen up** and **pen down**
+- **Set Z zero**
+- **Home** — run the homing cycle
 
 ## By hand
 
-**Only with the machine powered off.** Push the carriage gently. Never force it
+**Only with the machine powered off.** Push the carriage gently, and never force it
 against the ends of its travel.
 
-## With the jog wheel
+## In the web interface
 
-Use the jog wheel in the **Controls** panel (B). Click a segment to move the carriage
-in that direction. The distance depends on which ring you click:
+The jog wheel in the **Controls** panel moves the carriage. Click a segment to move in
+that direction; the distance depends on which ring you click:
 
 | Ring | Distance per click |
 |---|---|
@@ -21,12 +29,13 @@ in that direction. The distance depends on which ring you click:
 
 Start with a large step to get close, then work inwards for fine positioning.
 
-## Raising and lowering the pen
+## The Z axis
 
-Use the **Pen Up** and **Pen Down** macros rather than jogging the Z axis directly.
+The stepper toolhead has roughly **14 mm** of Z travel. In normal use you only need
+about 5 mm of it — see
+[setting the pen height](1stPlot.md#3-fit-the-pen-and-set-its-height).
 
-!!! warning "Z behaviour depends on your toolhead"
-    What the Z axis does varies between toolheads. On a solenoid machine, **Z0 is pen
-    down and Z1 is pen up**. On a servo or Z-stepper toolhead the range is different.
-    Jogging Z by hand can drive the pen into the bed, so use the macros unless you know
-    your machine's configuration.
+!!! warning "Mind the bed"
+    Z zero is wherever you last set it, normally with the nib on the paper. Jogging
+    down from there drives the nib into the bed. Use pen up and pen down rather than
+    jogging Z once your height is set.

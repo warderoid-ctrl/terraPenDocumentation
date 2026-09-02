@@ -1,45 +1,51 @@
-# Making artwork with terraForge
+# terraForge
 
-**terraForge is the recommended way to get your artwork onto the terraPen.** It is our
-own desktop application, built for this machine, and it replaces most of the older
-multi-step workflows described on the following pages.
+**terraForge is how we recommend you drive the terraPen.** It is our own desktop
+application, built for this machine, and it replaces the older multi-step workflows of
+exporting, converting and uploading by hand.
 
-- Download it from the [terraForge releases page](https://github.com/theworkisthework/terraForge/releases)
-- Read the [full terraForge user guide](https://github.com/theworkisthework/terraForge/blob/main/docs/terraForge-user-guide.md)
+- [Download the latest release](https://github.com/theworkisthework/terraForge/releases)
+- [Full terraForge user guide](https://github.com/theworkisthework/terraForge/blob/main/docs/terraForge-user-guide.md)
 
-## Why use it
+!!! note "Take the latest release candidate"
+    terraForge is under active development, so the newest build is normally an **RC**
+    release. That is the one to install — it is where the current work lands.
 
-With terraForge you can do the whole job in one place:
+## What it does
 
 - Import **SVG** and **PDF** artwork, or open existing **G-code**
-- Position, scale and rotate your work on an on-screen representation of the bed
-- Generate G-code, with path optimisation to cut down wasted pen travel
-- Preview the toolpath before you commit paper to it
-- Connect over **Wi-Fi or USB**, upload straight to the SD card, and run the job
-- Jog the machine, home it, and clear alarms without leaving the app
+- Position, scale and rotate work on an on-screen representation of the bed
+- Generate G-code with path optimisation, so the pen wastes less time travelling
+- Preview the toolpath before committing paper to it
+- Connect over **Wi-Fi or USB**, upload to the SD card, and run the job
+- Jog, home, set Z zero, raise and lower the pen, and clear alarms
 
-Previously this meant exporting from Inkscape or Lightburn, converting to G-code,
-then uploading through the web interface by hand. terraForge does all of it.
+The stepper toolhead is the **default** in terraForge, so a new machine should work
+without any configuration changes.
 
 ## The basic workflow
 
-1. **Set up your machine profile** — tell terraForge your bed size and how to reach
-   your terraPen (Wi-Fi or USB).
-2. **Connect** to the machine.
+1. **Set up your machine profile** — bed size, and how to reach the plotter.
+2. **Connect** over Wi-Fi or USB.
 3. **Import** your SVG or PDF.
-4. **Position** it on the bed and scale it to suit your paper.
+4. **Position** it on the bed and scale it to your paper.
 5. **Generate G-code**, checking the previewed toolpath.
-6. **Upload and plot** — send it to the SD card and press play.
+6. **Upload and plot.**
 
 The [user guide](https://github.com/theworkisthework/terraForge/blob/main/docs/terraForge-user-guide.md)
-covers each step in detail, with screenshots.
+covers every step in detail, with screenshots.
 
-!!! note "You still need to set up the machine itself"
-    terraForge handles the artwork and the job. Fitting paper, setting pen height and
-    homing are still done at the machine — see [Your first plot](1stPlot.md).
+## Wi-Fi or USB
 
-## Other tools
+Both work. If you want to use USB rather than Wi-Fi, select it in terraForge's
+**machine settings** — see [Connect via USB-C](ConnectTethered.md).
 
-terraForge is the easiest route, but the terraPen plots standard G-code, so anything
-that produces it will work. See [Uploading files](uploadingFiles.md) for the
-alternatives, including [Lightburn](LightburnProfilesAndSettings.md).
+## Feedback
+
+terraForge is developed in the open, and questions, suggestions and bug reports are
+genuinely wanted. Bring them to
+[our Discord](https://discord.gg/fEXrmUm5nR).
+
+!!! note "You still set the machine up by hand"
+    terraForge handles artwork and jobs. Fitting paper and setting pen height still
+    happen at the machine — see [Your first plot](1stPlot.md).

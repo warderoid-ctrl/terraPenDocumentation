@@ -6,10 +6,10 @@
 2. Press the **play** icon on that row.
 3. The plot begins after a pause of about ten seconds.
 
-!!! warning "Zero the machine first"
-    Always set your origin before plotting — see
-    [Your first plot](1stPlot.md#3-home-the-machine). Starting a job from the wrong
-    position is the most common way to spoil a sheet.
+!!! warning "Home the machine first"
+    Always [home](1stPlot.md#2-home-the-machine) before plotting, and set your own zero
+    afterwards if the job needs one. Starting from the wrong position is the most
+    common way to spoil a sheet.
 
 ## While it runs
 
@@ -30,4 +30,4 @@ the serial console.
 !!! note "Nothing works until the alarm is cleared"
     While the alarm is active you cannot jog the machine or start another plot.
 
-After clearing an alarm, re-establish your origin before plotting again.
+After clearing an alarm, home the machine again before plotting.

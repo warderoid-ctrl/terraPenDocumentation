@@ -47,7 +47,7 @@ One-click shortcuts:
 | Macro | What it does |
 |---|---|
 | **ZeroXY** | Sets the current carriage position as X0, Y0 for your job |
-| **Home** | Returns the toolhead to the 0,0,0 position |
+| **Home** | Returns the toolhead to the 0,0,0 position. To run the machine's homing cycle against its limit switches, use **Home** in [terraForge](terraForge.md) or send `$H`. |
 | **Pen Up** | Lifts the pen clear of the paper |
 | **Pen Down** | Drops the pen onto the paper |
 
