@@ -28,6 +28,24 @@ or the picture it shows you will be wrong.
 - Get it as flat as possible. Any lift or ripple shows up in the drawing, and badly
   warped paper can catch the pen.
 
+## If the paper buckles mid-plot
+
+A page taking on a lot of ink will cockle and lift. It is tempting to reach in and tape
+it back down while the plot runs.
+
+!!! warning "Do not re-tape a plot in progress"
+    Re-fixing the paper part way through **shifts it relative to the drawing already on
+    it**. The machine has no idea you moved anything and carries on from where it
+    thinks it is, so the rest of the plot lands misaligned — usually worse than the
+    buckle you were trying to fix.
+
+Leave it be. The pen generally pushes a buckle back down as it passes over it.
+
+The real fix is for next time: if a piece of work buckles enough to catch the pen, give
+it **more Z lift** on the next run — see
+[why 5 mm, and when you need more](1stPlot.md#3-fit-the-pen-and-set-its-height). Wet
+media and dense hatching are the usual culprits.
+
 !!! tip "Check your extents before you draw"
     Before plotting on good paper, jog the carriage — with the pen up — to each corner
     of your artwork's bounding box. This confirms the drawing fits on the stock and

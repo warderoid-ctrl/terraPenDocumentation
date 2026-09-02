@@ -157,6 +157,15 @@ pause, stay connected from the start — see
 Please report it on [Discord](https://discord.gg/fEXrmUm5nR) if you hit it; we track
 FluidNC's development and it helps to know it is still happening.
 
+## The paper is buckling as it plots
+
+Normal on a page taking a lot of ink. **Do not re-tape it mid-plot** — that moves the
+paper relative to the work already drawn and misaligns everything after it. The pen
+will usually push the buckle back down as it passes.
+
+Next time, give the job more Z lift — see
+[if the paper buckles mid-plot](plotting.md#if-the-paper-buckles-mid-plot).
+
 ## The plot started in the wrong place
 
 The origin was not where you thought. Home the machine, set your zero again if the job
