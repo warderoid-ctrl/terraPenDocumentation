@@ -20,7 +20,7 @@ jobs:
     env:
       # Canonical URL for the built site. mkdocs.yml reads this via !ENV, so a
       # fork only has to change it here, not in the config.
-      SITE_URL: https://warderoid-ctrl.github.io/terraPenDocumentation/
+      SITE_URL: https://theworkisthework.github.io/terraPenDocumentation/
 
     steps:
       - uses: actions/checkout@v4

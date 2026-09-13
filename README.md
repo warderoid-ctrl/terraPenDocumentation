@@ -13,7 +13,7 @@ the machine, the photography and video shot lists, and known content gaps. It is
 part of the user guide and is not linked from the site navigation.
 
 - Source: [docs/internal/worklist.html](docs/internal/worklist.html)
-- Published: <https://warderoid-ctrl.github.io/terraPenDocumentation/internal/worklist.html>
+- Published: <https://theworkisthework.github.io/terraPenDocumentation/internal/worklist.html>
 
 Tick boxes on the published page are remembered in your own browser only; they are not
 shared or committed. To record progress for everyone, edit the file.
