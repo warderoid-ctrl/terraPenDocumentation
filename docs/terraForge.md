@@ -32,10 +32,13 @@ The settings that matter for a terraPen:
 | **Connection** | **Wifi** or **Usb** |
 | **Host / IP** | `terrapen.local`, or the address your router assigned |
 
-!!! note "The supplied profile says `fluidnc.local`"
-    That is FluidNC's own default name. If `terrapen.local` does not resolve for you,
-    try `fluidnc.local`, and if neither does, use the IP address your router assigned —
-    that always works.
+!!! note "Change the host — the default is not terraPen's"
+    terraForge works with any FluidNC machine, so its supplied profile uses the generic
+    `fluidnc.local`. **terraPens are shipped as `terrapen.local`**, so change this field
+    when you set your profile up.
+
+    If neither name resolves, mDNS is not working on your network — use the IP address
+    your router assigned, which always works.
 
 !!! warning "Check the bed size before your first plot"
     The supplied default profile is smaller than an A2 terraPen. Set the bed to

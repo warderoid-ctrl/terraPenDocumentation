@@ -6,12 +6,10 @@ Fit the [stepper toolhead](assembly.md) first if you have not already.
 
 ## 1. Connect the power
 
-The power socket is on the controller, **underneath the base board**. Lift the front
-of the machine to reach it.
+Both the power inlet and the switch are at the **rear right** of the plotter.
 
-Connect the supplied 12 V adaptor and plug it into the wall.
-
-Then switch the machine on. **The power switch is at the rear right of the plotter.**
+1. Connect the supplied adaptor to the inlet and plug it into the wall.
+2. Switch the machine on.
 
 ## 2. Connect to the terraPen's Wi-Fi
 

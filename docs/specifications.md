@@ -16,9 +16,8 @@
 
 ## Bench space
 
-The machine is 800 × 600 mm, so allow a little more than that. Leave room at the
-**rear right** to reach the power switch, and enough clearance at the front to lift
-the machine when you need to reach the power inlet underneath.
+The machine is 800 × 600 mm, so allow a little more than that. Leave access to the **rear right**, where both
+the power inlet and the switch are.
 
 Paper larger than the drawing area will overhang the machine, which is fine — but
 [the artwork itself must fit](plotting.md), or the plot will crash.

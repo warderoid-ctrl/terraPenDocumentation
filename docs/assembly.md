@@ -12,8 +12,9 @@ You will need the hex key supplied in the box.
 ## Steps
 
 1. Unpack the toolhead and hold it up to its mounting on the carriage.
-2. **Connect the 4-pin connector.** Push it home until it seats fully. Do not force
-   it — if it resists, check the alignment rather than pressing harder.
+2. **Connect the 4-pin connector.** It is keyed, so it only goes in one way round —
+   you cannot plug it in backwards. Push it home until it seats fully, and if it
+   resists, turn it around rather than pressing harder.
 3. Position the toolhead against the mounting and fit the **four screws**.
 4. Tighten them evenly with the hex key — firm, but do not over-torque them.
 5. **Tuck the wires away neatly**, using a cable tie if you need one.

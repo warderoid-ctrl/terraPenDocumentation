@@ -56,7 +56,7 @@ at the rear right switch. That always works, whatever software you are running.
   machine.
 - Use the supplied adaptor. It is a 110–240 V switching supply, so it works anywhere,
   but the machine expects its 12 V output.
-- Keep liquids away from the controller, which sits under the base board.
+- Keep liquids away from the controller and from the power inlet at the rear.
 
 ## Around other people
 

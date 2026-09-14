@@ -202,9 +202,9 @@
     <h1>What the docs still need</h1>
     <p class="standfirst">The guide is live at <a href="https://theworkisthework.github.io/terraPenDocumentation/">theworkisthework.github.io/terraPenDocumentation</a> — 26 pages, and about six times the words it started with. Five questions are open, none of them blocking. What remains is mostly photography.</p>
     <div class="counts">
-      <div class="count good"><b>12</b><span>Answered</span></div>
-      <div class="count open"><b>5</b><span>Still open</span></div>
-      <div class="count"><b>27</b><span>Images left</span></div>
+      <div class="count good"><b>15</b><span>Answered</span></div>
+      <div class="count open"><b>2</b><span>Still open</span></div>
+      <div class="count"><b>26</b><span>Images left</span></div>
       <div class="count"><b>9</b><span>Videos</span></div>
       <div class="count"><b>11,400</b><span>Words now</span></div>
     </div>
@@ -232,6 +232,9 @@
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Uploads fail over the access point</b><span>Not just slow — a large file can fail outright. Plus the size check against terraForge's file browser, and the symptom it explains: a plot that stops part way through the drawing.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Do not re-tape a buckling plot</b><span>Re-fixing paper mid-run shifts it relative to the work already drawn. The fix is prospective: more Z lift next time.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Pen lift is a range, not a number</b><span>5 mm for most work, 10 mm for heavily warping paper, full travel for a paintbrush — and more lift costs time on every pen-up move.</span></div></div>
+      <div class="log-row"><div class="log-id">R7</div><div class="log-body"><b>terraPens ship as terrapen.local</b><span>fluidnc.local is terraForge being generic — it drives any FluidNC machine, so its supplied profile uses FluidNC's own default. The page now says to change the host rather than hedging between two names.</span></div></div>
+      <div class="log-row"><div class="log-id">R8</div><div class="log-body"><b>The power inlet moved to the rear too</b><span>Inlet and switch are both at the rear right. First time setup had been telling people to tip the machine up and look underneath — three pages corrected.</span></div></div>
+      <div class="log-row"><div class="log-id">R9</div><div class="log-body"><b>The 4-pin connector is keyed</b><span>So the assembly page can say plainly that it only goes in one way round, which is more reassuring than "do not force it".</span></div></div>
       <div class="log-row"><div class="log-id">FIX</div><div class="log-body"><b>Two corrections to things I had assumed</b><span>Storage said keep it flat and never stand it on end; the machine has rubber bumpers on its left side precisely so it can be stood up. And the "set the nib slightly low" advice was explained by a spring, which solenoid machines do not have — there it is gravity.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Hardware and source files page</b><span>Links the mechanical, electronics, driver and firmware repositories, and carries the controller pinout. The board diagram also solved the blocking shot for the limit switch wiring check.</span></div></div>
       <div class="log-row"><div class="log-id">NEW</div><div class="log-body"><b>Limit switch failure and crash recovery</b><span>Power down at the rear switch, hand-move the head 50 mm clear, then test both optical switches with a piece of paper and look for the green light. Written up in troubleshooting with a pointer from the FAQ. Needs two photos before it is genuinely usable — the lit switch, and the board connectors.</span></div></div>
@@ -257,33 +260,12 @@
       </div>
 
       <div class="q">
-        <div class="q-top"><span class="qid">R6</span><h3>terraForge's default machine profile is not an A2 terraPen</h3><span class="chip blocks">Would spoil a plot</span></div>
+        <div class="q-top"><span class="qid">R6</span><h3>Should terraForge ship a terraPen preset?</h3><span class="chip blocks">Would spoil a plot</span></div>
         <p>The shipped <code>TerraPen (Default)</code> profile is set to a <b>220 × 200 mm</b> bed. On a 594 × 420 machine, artwork positioned against that profile lands in the wrong place, and nothing warns the user.</p>
         <div class="evidence">Bed width (mm)   220        Bed height (mm)  200
 should be        594                         420</div>
-        <p class="ask"><b>I have</b> put a warning on the terraForge page telling people to set it themselves. <b>But</b> this looks like it should be fixed in terraForge instead — worth raising with Mark.</p>
+        <p class="ask">This is the same root cause as the hostname: terraForge drives any FluidNC machine, so its defaults are FluidNC-generic rather than terraPen-specific. Two fields now have to be corrected by hand on every new install — bed size and host.<br><br><b>Worth raising with Mark:</b> a terraPen preset, or shipping the supplied profile with 594 × 420 and <code>terrapen.local</code>, would remove both. The docs tell people to set them meanwhile.</p>
       </div>
-
-      <div class="q">
-        <div class="q-top"><span class="qid">R7</span><h3>Is the host <code>terrapen.local</code> or <code>fluidnc.local</code>?</h3><span class="chip confirm">Confirm</span></div>
-        <p>This guide says <code>terrapen.local</code> throughout, which you confirmed. terraForge's default profile ships with <code>fluidnc.local</code> in the Host field.</p>
-        <p class="ask"><b>I need:</b> which actually resolves. I have written <code>terrapen.local</code> with "or the address your router assigned" as a fallback, so the page is safe either way — but the two defaults disagreeing will confuse people.</p>
-      </div>
-
-
-      <div class="q">
-        <div class="q-top"><span class="qid">R9</span><h3>Is the toolhead's 4-pin connector keyed?</h3><span class="chip confirm">Confirm</span></div>
-        <p>I nearly wrote "it only fits one way round", then took it out — if the connector is not polarised, that sentence invites someone to plug it in reversed and damage something.</p>
-        <p class="ask"><b>I need:</b> whether it is keyed. If it is, saying so is reassuring. If it is not, the page should say which way round it goes, and the photo needs to show the orientation clearly.</p>
-      </div>
-
-      <div class="q">
-        <div class="q-top"><span class="qid">R8</span><h3>Has the power socket moved too?</h3><span class="chip confirm">Confirm</span></div>
-        <p>The guide still says the socket is on the controller <b>underneath the base board</b>, reached by lifting the front — inherited from the original documentation. Now that there is a switch at the rear right, a revision that added it may well have moved the inlet to the back as well.</p>
-        <p class="ask"><b>I need:</b> confirmation, or the new location. Sending someone to tip up a machine that has a socket at the back is a small thing that makes a guide feel untrustworthy on page one.</p>
-      </div>
-
-    </div>
   </section>
 
   <!-- ================= SHOT LIST ================= -->
@@ -302,7 +284,6 @@ should be        594                         420</div>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-01 as shot" data-id="n1"></td><td class="id">TP-01</td><td class="page">WhatsInTheBox</td><td class="shot"><b>Box contents flat-lay</b><span>Labelled, and showing the toolhead unattached so people know that is expected.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-02 as shot" data-id="n2"></td><td class="id">TP-02</td><td class="page">assembly<span class="new">new page</span></td><td class="shot"><b>Fitting the stepper toolhead</b><span>Highest priority in the whole list. Where it mounts, the four screw positions, <b>the 4-pin connector</b>, and how the wiring should be routed and tied. This is the owner's first task and there is no image of it anywhere.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-03 as shot" data-id="n3"></td><td class="id">TP-03</td><td class="page">1sttimeuse</td><td class="shot"><b>Power socket under the base board</b><span>Machine tipped up at the front. People cannot find this.</span></td><td>Photo</td></tr>
-          <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-03b as shot" data-id="n3b"></td><td class="id">TP-03b</td><td class="page">1sttimeuse</td><td class="shot"><b>The power switch, rear right</b><span class="new">new</span><span>Wide enough to place it on the machine, then close enough to see it. Referenced from first setup, restarting and troubleshooting, so it earns a good shot.</span></td><td>Photo</td></tr>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-04 as shot" data-id="n4"></td><td class="id">TP-04</td><td class="page">1sttimeuse</td><td class="shot"><b>Wi-Fi list showing "terraPen"</b><span>Confirms they are looking at the right network.</span></td><td>Screenshot</td></tr>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-05 as shot" data-id="n5"></td><td class="id">TP-05</td><td class="page">1sttimeuse</td><td class="shot"><b>The macOS captive portal</b><span>So people recognise the window they are being told to close.</span></td><td>Screenshot</td></tr>
           <tr><td class="tick"><input type="checkbox" aria-label="Mark TP-06 as shot" data-id="n6"></td><td class="id">TP-06</td><td class="page">1sttimeuse</td><td class="shot"><b>Interface on first load</b><span>Current full-window view.</span></td><td>Screenshot</td></tr>
