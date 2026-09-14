@@ -32,6 +32,11 @@ The settings that matter for a terraPen:
 | **Connection** | **Wifi** or **Usb** |
 | **Host / IP** | `terrapen.local`, or the address your router assigned |
 
+!!! note "The supplied profile says `fluidnc.local`"
+    That is FluidNC's own default name. If `terrapen.local` does not resolve for you,
+    try `fluidnc.local`, and if neither does, use the IP address your router assigned —
+    that always works.
+
 !!! warning "Check the bed size before your first plot"
     The supplied default profile is smaller than an A2 terraPen. Set the bed to
     594 × 420 mm, or artwork will not position where you expect.

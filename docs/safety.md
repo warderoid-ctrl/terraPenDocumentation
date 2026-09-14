@@ -14,7 +14,8 @@ but read this page once before your first plot.
     with the guidance on this page understood first. It is not a children's toy and
     should not be treated as one.
 
-Use it for what it is for. It is not a cutting machine, a laser, or a lifting device,
+Use it for what it is for. With a drag knife fitted it will also
+[cut vinyl](vinyl.md), but it is not a laser, not a router, and not a lifting device,
 and the frame is not designed to be leaned on, sat on or stood on.
 
 ## While the machine is running

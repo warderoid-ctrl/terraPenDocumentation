@@ -58,8 +58,16 @@ That light means the switch is powered and working. **Test both switches.**
 
 The problem is nearly always the wiring rather than the switch itself.
 
-1. Carefully reseat the wires and watch for the green light as you do.
-2. Check **both ends** of the run — at the switch, and at the controller board.
+!!! warning "Switch off before touching the wiring"
+    The green-light test needs the machine powered, but handling the wiring does not.
+    **Power down at the rear right before reseating anything**, then switch back on to
+    retest. Working on connectors live risks shorting the board or causing unexpected
+    movement.
+
+1. Switch the machine **off**.
+2. Reseat the wires at **both ends** of the run — at the switch, and at the controller
+   board.
+3. Switch back on and repeat the paper test, watching for the green light.
 
 On the board, the limit switches land on **J5 for X** and **J19 for Y**:
 

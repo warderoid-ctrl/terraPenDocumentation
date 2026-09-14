@@ -12,14 +12,23 @@ own network.** Over the access point, a large plot can fail to transfer at all â
 
 ## 1. Enter your network details
 
-Connect to the `terraPen` access point and open the web UI, then set your network
-name and password in the controller settings.
+Connect to the `terraPen` access point and open the web UI, then open the controller
+settings.
+
+Set each field in turn and click **Set** after each one. **Role comes first** â€” it is
+the field that actually switches the controller out of access point mode, and without
+it the machine will restart still advertising `terraPen` however correct the other
+details are.
+
+| Field | Set it to |
+|---|---|
+| **Role** | Change from *Access Point* to *WiFi Client* |
+| **SSID** | Your network's name |
+| **Password** | Your network's password |
 
 ![Setting the network SSID](img/Settings SSID.png)
 
 ![Setting the network password](img/Settings SSID Password.png)
-
-Click **Set** after each field.
 
 ## 2. Restart the controller
 
